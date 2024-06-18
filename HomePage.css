@@ -1,0 +1,100 @@
+html, body {
+    background-color: #000000;
+    margin: 0;
+}
+
+#page{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#ul1 {
+    list-style-type: none;
+    }
+
+#card6{
+    margin-top: 22px;
+    
+}
+
+
+
+.card {
+    border: none;
+    object-fit: cover;
+    padding: 0;
+
+}
+
+#collumnSx{
+    background-color: #000000;
+}
+
+hr{
+    background-color: #141414;
+}
+#collumnDx{
+    background-color: #000000;
+   
+}
+
+#collumnCentr{
+background-color: #161616;
+height: 100%;
+height: 850px;
+}
+.navbar{
+    background-color: #161616;
+    width: 100%;
+    height: 100px;
+}
+.ul2{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+ #friends{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+ }
+
+.prova{
+display: block;
+
+}
+.cardImg{
+    object-fit: fill;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#imgSix{
+    width:100px;
+    height:100%;
+    object-fit: cover;
+    
+
+}
+
+.img-bar{
+    width: 20px;
+    height: 20px;
+}
+.img-music{
+    width: 77px;
+    height: 77px;
+}
+
+#sixCards{
+background-color: #000000;
+margin-left: 4px;
+margin-right: 4px;
+margin-bottom: 15px;
+}
