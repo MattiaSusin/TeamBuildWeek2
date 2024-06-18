@@ -115,3 +115,21 @@ p img {
     flex: 1;
 }
 li span:not(:first-child)  { opacity: 50%;}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .duration-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 60px; 
+  }
+  
+  .duration-span {
+    text-align: right;
+    opacity: 50%;
+  }

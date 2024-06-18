@@ -39,16 +39,22 @@ document.addEventListener("DOMContentLoaded", async function () {
       const viewsSpan = document.createElement("span");
       viewsSpan.textContent = `${song.rank}`;
       viewsSpan.classList.add("me-3");
+
       const durationSpan = document.createElement("span");
+      durationSpan.classList.add("duration-span");
       const durationMinutes = Math.floor(song.duration / 60);
       const durationSeconds = song.duration % 60;
       durationSpan.textContent = `${durationMinutes}:${
         durationSeconds < 10 ? "0" : ""
       }${durationSeconds}`;
 
+      const durationWrapper = document.createElement("div");
+      durationWrapper.classList.add("duration-wrapper");
+      durationWrapper.appendChild(durationSpan);
+
       details.appendChild(titleSpan);
       details.appendChild(viewsSpan);
-      details.appendChild(durationSpan);
+      details.appendChild(durationWrapper);
 
       listItem.appendChild(image);
       listItem.appendChild(details);
