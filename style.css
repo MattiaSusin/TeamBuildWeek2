@@ -1,5 +1,14 @@
+html, body {
+    background-color: #000000;
+    margin: 0;
+}
+
 #page{
+    min-height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 #ul1 {
@@ -7,13 +16,20 @@
     }
 
 #card6{
-    height: 100px;
-    width: 400px;
-    object-fit: cover;
+    margin-top: 22px;
+    
 }
 
- #card5{
+ /* #card5{
     height: 250px;
+    border: none;
+} */
+
+.card{
+    border: none;
+    object-fit: cover;
+    padding: 0;
+
 }
 
 #collumnSx{
@@ -30,8 +46,14 @@ hr{
 
 #collumnCentr{
 background-color: #161616;
+height: 100%;
+height: 850px;
 }
-
+.navbar{
+    background-color: #161616;
+    width: 100%;
+    height: 100px;
+}
 .ul2{
     display: flex;
     flex-direction: row;
@@ -62,4 +84,13 @@ display: block;
     object-fit: cover;
     margin-left: ;
 
+}
+
+.img-bar{
+    width: 20px;
+    height: 20px;
+}
+.img-music{
+    width: 77px;
+    height: 77px;
 }
