@@ -63,3 +63,16 @@ body {
   justify-content: space-between;
   flex: 1;
 }
+#ul1 {
+  list-style-type: none;
+}
+#collumnSx {
+  background-color: #000000;
+}
+
+hr {
+  background-color: #141414;
+}
+#collumnDx {
+  background-color: #000000;
+}
