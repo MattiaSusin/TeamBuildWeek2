@@ -109,3 +109,25 @@ margin-left: 4px;
 margin-right: 4px;
 margin-bottom: 15px;
 }
+.timer {
+    position: absolute;
+left: 38%;
+top: 49%;
+
+    width: 350px;
+height: 10px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-color: #4d4d4d;
+}
+.timer1 {
+    position: relative;
+left: 0%;
+top: 0%;
+
+    width: 100px;
+height: 9px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-color: white;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer con Animazione</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      .timer-container {
+        text-align: center;
+      }
+      .progress-bar {
+        width: 500px;
+        height: 10px;
+        background-color: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .progress {
+        height: 100%;
+        background-color: white;
+        width: 0;
+        transition: width 1s linear;
+      }
+      .time-display {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer-container">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="time-display">0</div>
+      <button onclick="startTimer()">Start Timer</button>
+    </div>
+    <script>
+      function startTimer() {
+        const duration = 200; // Durata del timer in secondi (10 minuti)
+        let timeRemaining = duration;
+
+        const progressBar = document.querySelector(".progress");
+        const timeDisplay = document.querySelector(".time-display");
+
+        const timerInterval = setInterval(() => {
+          if (timeRemaining > 0) {
+            timeRemaining--;
+
+            const progressPercent =
+              ((duration - timeRemaining) / duration) * 100;
+            progressBar.style.width = `${progressPercent}%`;
+
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            timeDisplay.textContent = `${minutes}:${
+              seconds < 10 ? "0" : ""
+            }${seconds}`;
+          } else {
+            clearInterval(timerInterval);
+            alert("Il tempo è scaduto!");
+          }
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
