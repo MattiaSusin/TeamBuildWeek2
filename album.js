@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(album => {
       const albumHtml = `
                 <img id="albumCover" src="${album.cover_medium}" alt="${album.title} cover" style="cursor:pointer;">
+                <p>Artista: ${album.artist.name}</p>
+                <p>Album: ${album.title}</p>
             `;
       albumContainer.innerHTML = albumHtml;
 
