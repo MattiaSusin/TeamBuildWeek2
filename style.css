@@ -94,3 +94,10 @@ display: block;
     width: 77px;
     height: 77px;
 }
+
+#sixCards{
+background-color: #000000;
+margin-left: 4px;
+margin-right: 4px;
+margin-bottom: 15px;
+}
