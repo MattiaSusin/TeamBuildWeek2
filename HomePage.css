@@ -31,25 +31,36 @@ html, body {
 
 #collumnSx{
     background-color: #000000;
+    height: 100vh;
 }
 
 hr{
     background-color: #141414;
 }
+
+.scrollbar{
+    width: 300px;
+    height: 540px;
+    overflow: auto;
+    scrollbar-color: #4d4d4d #000000;
+
+}
 #collumnDx{
     background-color: #000000;
+    height: 100vh;
    
 }
 
 #collumnCentr{
 background-color: #161616;
 height: 100%;
-height: 850px;
+height: 100vh;
 }
 .navbar{
     background-color: #161616;
-    width: 100%;
-    height: 100px;
+    
+    margin-left: auto;
+
 }
 .ul2{
     display: flex;
