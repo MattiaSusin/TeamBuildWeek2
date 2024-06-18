@@ -16,30 +16,55 @@
     <div id="page" class="container-fluid">
       <!-- ! INIZIO CONTENITORE 3 COLONNE PRINCIPALI -->
       <div class="row">
-        <div class="col-2" id="collumnSx">
+        <div class="col-2 bg-dark text-white" id="collumnSx">
           <!-- ! INIZIO COLONNA SINISTRA -->
           <div>
             <!-- ? INIZIO MENU -->
-            <div></div>
             <div>
-              <ul class="text-light" id="ul1">
-                <li>Home</li>
-                <li>Search</li>
-                <li>Your Library</li>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
+                    ><span class="d-inline-block align-center"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-house-door"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                        />
+                      </svg>
+                    </span>
+                    Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Your Library</a>
+                </li>
               </ul>
             </div>
             <div>
-              <ul class="text-light" id="ul1">
-                <li>Playlists</li>
-                <li>Liked Songs</li>
-                <li>Discover Weekly</li>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Playlists</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Liked Songs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Discover Weekly</a>
+                </li>
               </ul>
             </div>
             <hr class="text-secondary" />
           </div>
           <!-- ? FINE MENU -->
-          <div></div>
-          <!-- ? JS -->
         </div>
         <!-- ! FINE COLONNA SINISTRA -->
 
@@ -47,143 +72,90 @@
           <!-- ! INIZIO COLONNA CENTRALE -->
           <div>
             <!-- ? INIZIO BAR INIZIALE -->
-            <div></div>
-            <!-- ?SVG FRECCE -->
-            <div></div>
-            <!-- ? INIZIO DROPDOWN -->
-            <div>
+            <div class="d-flex justify-content-between align-items-center">
               <div>
-                <!-- ? img -->
-                <img src="" alt="" />
+                <!-- ?SVG FRECCE -->
               </div>
-              <!-- ? img -->
               <div>
-                <div></div>
+                <!-- ? INIZIO DROPDOWN -->
+              </div>
+              <div class="d-flex align-items-center">
+                <div>
+                  <!-- ? img -->
+                  <img src="" alt="" />
+                </div>
                 <div>
                   <div></div>
+                  <div>
+                    <div></div>
+                    <div></div>
+                  </div>
                   <div></div>
+                  <div></div>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
                 </div>
-                <div></div>
-                <div></div>
+              </div>
+            </div>
+            <!-- ? FINE BAR INIZIALE -->
+          </div>
+
+          <div class="container-fluid">
+            <div class="row align-items-center mt-5">
+              <!-- immagine album -->
+              <div class="col-2 d-flex align-items-center">
+                <img class="img" src="./assets/imgs/main/image-11.jpg" alt="albumImage" />
+              </div>
+              <div class="col-10 d-flex flex-column justify-content-between" style="height: 100%">
+                <div class="mt-3 pt-2">
+                  <span class="text-light">Album</span>
+                </div>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <h1 class="text-light m-0">Gioventù bruciata</h1>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <img
+                    class="artist-img rounded-circle me-2"
+                    src="./assets/imgs/main/image-12.jpg"
+                    alt="artistImage"
+                  />
+                  <p class="text-light m-0">Pinguini Tattici Nucleari</p>
+                  <p class="text-light ms-2 m-0">• 2017 • 12 brani, 53 min 20 sec</p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ? FINE BAR INIZIALE -->
 
-          <div>
-            <h1>Buonasera</h1>
+          <div class="container mt-3 mb-3">
+            <button type="button" class="btn btn-success">Play</button>
+            <button type="button" class="btn btn-outline-light">♥</button>
+            <button type="button" class="btn btn-outline-light">...</button>
           </div>
 
-          <div id="sixCards" class="row d-flex justify-content-between">
-            <!-- !INIZIO 6 CARDS -->
-            <div class="card mb-3 col-4" id="card6">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-4" id="card6">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-4" id="card6">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-4" id="card6">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-4" id="card6">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-4" id="card6">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="..." class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text"><small class="text-body-secondary"></small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ! FINE 6 CARDS -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <ol class="ms-4 mt-3">
+                  <li class="mb-3 song-item">
+                    <div class="details">
+                      <span>#TITOLO</span>
+                      <span class="ms-5">RIPRODUZIONI</span>
+                      <span class="ms-3">DURATION</span>
+                    </div>
+                  </li>
+                </ol>
 
-          <div class="d-flex justify-content-between">
-            <div>
-              <h3>Altro di ciò che ti piace</h3>
+                <hr class="text-secondary" />
+              </div>
             </div>
-            <div>
-              <h6>VISUALIZZA TUTTO</h6>
-            </div>
-          </div>
-
-          <div class="row d-flex justify-content-between">
-            <!-- !5 CARDS -->
           </div>
         </div>
         <!-- ! FINE COLONNA CENTRALE -->
 
-        <div class="col-2">
+        <div class="col-2 bg-dark text-white">
           <!-- ! INIZIO COLONNA DESTRA -->
           <div>
             <p>Attività Amici</p>
@@ -200,7 +172,9 @@
                 </ol>
               </nav>
             </div>
-            <div><p>9ore</p></div>
+            <div>
+              <p>9 ore</p>
+            </div>
           </div>
           <div>
             <div><!-- svg --></div>
@@ -230,9 +204,6 @@
         <!-- ! FINE COLONNA DESTRA -->
       </div>
       <!-- ! FINE CONTENITORE 3 COLONNE PRINCIPALI -->
-
-      <div><!-- ! INIZIO BAR MUSIC --></div>
-      <!-- ! FINE BAR MUSIC -->
     </div>
   </body>
 </html>
