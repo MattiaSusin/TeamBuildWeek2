@@ -16,17 +16,23 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Release Date:</strong> ${new Date(
             albumData.release_date
           ).toDateString()}</p>
-          <h2>Tracks</h2>
+          
           <ul class="track-list">
             ${albumData.tracks.data
               .map(
                 track => `
-              <li>
-                <p><strong></strong> ${track.title}</p>
-                <p><strong></strong> ${track.artist.name}</p>
-                <p><strong></strong> ${track.rank}</p>
-                <p><strong></strong> ${formatDuration(track.duration)}</p>
-              </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col mt-3">${track.title} </br> ${
+                  track.artist.name
+                }</div>
+                     
+                      <div class="col mt-3">${track.rank}</div>
+                      <div class="col mt-3">${formatDuration(
+                        track.duration
+                      )}</div>
+                    </div>
+                  </li>
             `
               )
               .join("")}
