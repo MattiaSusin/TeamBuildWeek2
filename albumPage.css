@@ -1,0 +1,155 @@
+body {
+  background-image: linear-gradient(180deg, #d8ba4d, #af973e, #887530, #50451d, #1f1d14, #121212);
+}
+
+#collumnSx {
+  background-color: #000;
+  padding: 20px;
+}
+
+#page h1,
+#page p {
+  margin: 10px 0;
+}
+
+.btn-outline-light {
+  color: white;
+  border-color: white;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb-item a {
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: gray;
+}
+
+.img {
+  max-width: 100%;
+  width: 250px;
+  height: auto;
+  padding: 0px;
+}
+
+.artist-img {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+}
+.song-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.song-item .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+#ul1 {
+  list-style-type: none;
+}
+#collumnSx {
+  background-color: #000000;
+}
+
+hr {
+  background-color: #141414;
+}
+#collumnDx {
+  background-color: #000000;
+}
+
+.img-bar{
+    width: 20px;
+    height: 20px;
+}
+.img-music{
+    width: 77px;
+    height: 77px;
+}
+#fixed {
+   
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    min-width: 768px;
+   
+    bottom: 0px;
+    border-top-width: 1px;
+    border-top-style: solid;
+  
+    height: var(--layout-player-height);
+    left: 0px;
+  
+    position: fixed;
+    right: 0px;
+    z-index: 300;
+}
+.navbar{
+    background-color: #161616;
+    
+    margin-left: auto;
+
+}
+.timer {
+    position: absolute;
+left: 38%;
+top: 49%;
+
+    width: 20%;
+height: 10px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-color: #4d4d4d;
+}
+
+.timer1 {
+   
+left: 0%;
+top: 0%;
+
+    width: 15%;
+height: 9px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-color: white;
+}
+.timer2 {
+  
+left: 89%;
+top: 47%;
+margin-left: 20px;
+    width: 20%;
+height: 10px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-color: #4d4d4d;
+}
+.col-1 {
+  width: auto;
+}
+@media (max-width: 992px) {
+  #musicNav {
+      display: none;
+  }
+}

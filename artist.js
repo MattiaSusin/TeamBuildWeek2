@@ -9,6 +9,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     const songsList = document.createElement("ol");
     songsList.classList.add("ms-4", "mt-3");
 
+    const bgTestElement = document.querySelector(".bg-test");
+    if (songs.length > 0) {
+      const bgImage = songs[10].album.cover_xl;
+      bgTestElement.style.backgroundImage = `url(${bgImage})`;
+      bgTestElement.style.backgroundSize = "cover";
+      bgTestElement.style.backgroundPosition = "center";
+    }
+
     songs.forEach(song => {
       const listItem = document.createElement("li");
       listItem.classList.add(
