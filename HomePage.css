@@ -106,24 +106,46 @@ cursor: pointer;
 }
 
 #tendina {
-    background-color: #2d2d2e; /* Colore di sfondo del menu a tendina (lo stesso del pulsante .btn-dark) */
-    border: none; /* Rimuove il bordo */
+    background-color: #2d2d2e; /** Colore di sfondo del menu a tendina (lo stesso del pulsante .btn-dark) */
+    border: none; /** Rimuove il bordo */
   }
   
   
   #tendina .dropdown-item:hover, 
   #tendina .dropdown-item:focus {
-    background-color: #495057; /* Colore di sfondo degli elementi del menu al passaggio del mouse */
+    background-color: #495057; /** Colore di sfondo degli elementi del menu al passaggio del mouse */
   }
   
   .dropdown-menu-dark .dropdown-divider {
-    border-color: #6c757d; /* Colore del divisore */
+    border-color: #6c757d; /** Colore del divisore */
+  }
+  .freccie-container{
+    display: flex;
+    gap: 10px; /* *Spazio tra le frecce */
   }
 
+  .freccie{
+    background-color: #343a40; /** Colore di sfondo del cerchio */
+    border-radius: 50%; /* *Forma circolare */
+    padding: 8px; /** Spazio interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /** Larghezza del cerchio */
+    height: 30px; /** Altezza del cerchio */
+  }
+
+  .freccie svg {
+    color: #ffffff; /** Colore dell'icona */
+    width: 20px; /** Larghezza dell'icona */
+    height: 20px;  /** Altezza dell'icona */ 
+  }
+  
 
 .cardCenSix{
     background-color: #2a2a2a;
     border-radius: 2%;
+
 }
 
 #cardsLatDx{
