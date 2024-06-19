@@ -34,8 +34,10 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+ 
     
 }
+
 
 .text-1{
 font-size: 120px;
@@ -205,7 +207,7 @@ li span:not(:first-child)  { opacity: 50%;}
 left: 38%;
 top: 49%;
 
-    width: 350px;
+    width: 20%;
 height: 10px;
 border: 1px solid transparent;
 border-radius: 20px;
@@ -213,24 +215,32 @@ background-color: #4d4d4d;
 }
 
 .timer1 {
-    position: relative;
+   
 left: 0%;
 top: 0%;
 
-    width: 100px;
+    width: 15%;
 height: 9px;
 border: 1px solid transparent;
 border-radius: 20px;
 background-color: white;
 }
 .timer2 {
-    position: absolute;
+  
 left: 89%;
 top: 47%;
-
-    width: 150px;
+margin-left: 20px;
+    width: 20%;
 height: 10px;
 border: 1px solid transparent;
 border-radius: 20px;
 background-color: #4d4d4d;
+}
+.col-1 {
+  width: auto;
+}
+@media (max-width: 992px) {
+  #musicNav {
+      display: none;
+  }
 }
