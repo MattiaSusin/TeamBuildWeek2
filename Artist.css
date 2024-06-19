@@ -148,3 +148,20 @@ li span:not(:first-child)  { opacity: 50%;}
     text-align: right;
     opacity: 50%;
   }
+
+
+
+  .scrollbarL{
+    width: 300px;
+    height: 540px;
+    overflow: auto;
+    scrollbar-color: #4d4d4d #000000;
+
+}
+
+.scrollbarC{
+    height: 849px;
+    overflow: auto;
+    scrollbar-color: #4d4d4d #000000;
+
+}
