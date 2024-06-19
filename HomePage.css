@@ -131,3 +131,23 @@ border: 1px solid transparent;
 border-radius: 20px;
 background-color: white;
 }
+#fixed {
+   
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        min-width: 768px;
+       
+        bottom: 0px;
+        border-top-width: 1px;
+        border-top-style: solid;
+      
+        height: var(--layout-player-height);
+        left: 0px;
+      
+        position: fixed;
+        right: 0px;
+        z-index: 300;
+    }
