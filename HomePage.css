@@ -23,11 +23,78 @@ img{
 svg{
     cursor: pointer;
 }
-#card6{
-    margin-top: 22px;
+
+.albumColCen{
+
+    background: linear-gradient(90deg,#060606,#121212,#151515,#1B1B1B);
     
+
+}
+#card6{
+    margin-top: 22px; 
+}
+.btnSalva{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #00000000;
+    padding: 10px 30px;
+    border: solid #b0aeae 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 50px;
+    transition : 0ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
     
 }
+
+.btnSalva:hover{
+ /*    transition : 0ms;
+padding: 10px 32px;
+transform : translateY(-0px);
+background-color: #1ed760;
+color: #1ed760;
+border: none; */
+
+cursor: pointer;
+}
+.btnPlay{
+    font-size: 13px;
+    color: #000000;
+    background-color: #1ed760;
+    padding: 10px 30px;
+    border: solid #1ed760 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 50px;
+    transition : 0ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.btnPlay:hover{
+
+    /*  transition : 0ms;
+    padding: 10px 32px;
+    transform : translateY(-0px);
+    background-color: #1ed760;
+    color: #1ed760;
+    border: none */
+    cursor: pointer;
+    } 
+
+
+.imgAlbumColCentr{
+    margin: 20px;
+    width: 216px;
+    margin-left: 0%;
+}
+
 
 .cardCenSix{
     background-color: #2a2a2a;
@@ -155,7 +222,6 @@ display: block;
 }
 
 #sixCards{
-background-color: #000000;
 margin-left: 4px;
 margin-right: 4px;
 margin-bottom: 15px;
