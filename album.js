@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const albumCover = albumContainer.querySelector("#albumCover");
         albumCover.addEventListener("click", () => {
           localStorage.setItem("albumData", JSON.stringify(album));
-          window.location.href = "Prototipopagina2.html";
+          window.location.href = "albumPage.html";
         });
       });
     })

@@ -211,6 +211,7 @@ border: 1px solid transparent;
 border-radius: 20px;
 background-color: #4d4d4d;
 }
+
 .timer1 {
     position: relative;
 left: 0%;
@@ -221,4 +222,15 @@ height: 9px;
 border: 1px solid transparent;
 border-radius: 20px;
 background-color: white;
+}
+.timer2 {
+    position: absolute;
+left: 89%;
+top: 47%;
+
+    width: 150px;
+height: 10px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-color: #4d4d4d;
 }
