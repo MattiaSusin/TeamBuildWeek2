@@ -27,7 +27,7 @@ html, body {
 }
 
 #cardsLatDx{
-    background-color: #2a2a2a;
+    /* background-color: #2a2a2a */;
     border-radius: 2%;
 }
 
@@ -59,7 +59,27 @@ hr{
     height: 100vh;
    
 }
+#cardsLatDx{
+    border-radius: 4%;
+}
 
+.imgCardColDx {
+    border-radius: 50%;
+    width: 38px;
+}
+
+.contImgSx{
+width: 50px;
+}
+
+.contTextDx{
+    width: 242px;
+    
+}
+
+.contTextInt{
+height: 80px;
+}
 #collumnCentr{
 background-color: #161616;
 height: 100%;
@@ -73,7 +93,7 @@ height: 100vh;
 }
 .navbar{
     background-color: #161616;
-    
+    height:75px ;
     margin-left: auto;
 
 }
