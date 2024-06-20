@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", async function () {
   try {
-    const response = await fetch(
-      "https://striveschool-api.herokuapp.com/api/deezer/search?q=queen"
-    );
+    const urlParams = new URLSearchParams(window.location.search);
+    const artist = urlParams.get("artist");
+    const apiUrl = `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artist}`;
+
+    const response = await fetch(apiUrl);
     const data = await response.json();
 
     const songs = data.data;
+
     const songsList = document.createElement("ol");
     songsList.classList.add("ms-4", "mt-3");
 
@@ -73,6 +76,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     const popularHeading = document.querySelector(".text-white.mt-4.ms-4");
     popularHeading.after(songsList);
   } catch (error) {
-    console.error("Errore nel recupero dei dati:", error);
+    console.error("Error fetching data:", error);
   }
 });

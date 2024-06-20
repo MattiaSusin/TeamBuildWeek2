@@ -1,23 +1,73 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const albumIds = ["album1", "album2", "album3", "album4", "album5"];
+  const albumContainers = {
+    album1: "https://striveschool-api.herokuapp.com/api/deezer/album/597941372",
+    album2: "https://striveschool-api.herokuapp.com/api/deezer/album/595243",
+    album3: "https://striveschool-api.herokuapp.com/api/deezer/album/309377597",
+    album4: "https://striveschool-api.herokuapp.com/api/deezer/album/75621062",
+    album5: "https://striveschool-api.herokuapp.com/api/deezer/album/69804312",
+    album6: "https://striveschool-api.herokuapp.com/api/deezer/album/13994766",
 
-  fetch("https://striveschool-api.herokuapp.com/api/deezer/album/75621062")
-    .then(response => response.json())
-    .then(album => {
-      const albumHtml = `
-        <img id="albumCover" src="${album.cover_medium}" alt="${album.title} cover" style="cursor:pointer;">
-        <p>Artista: ${album.artist.name}</p>
-        <p>Album: ${album.title}</p>
-      `;
+    album7: "https://striveschool-api.herokuapp.com/api/deezer/album/14048552",
+    album8: "https://striveschool-api.herokuapp.com/api/deezer/album/533077002",
+    album9: "https://striveschool-api.herokuapp.com/api/deezer/album/451171485",
+    album10: "https://striveschool-api.herokuapp.com/api/deezer/album/80674402",
+    album11:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/101230302",
+    album12:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/285890322",
+    album13:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/569618961",
+    album14:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/561958172",
+    album15:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/239880872",
+    album16:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/216835762",
+    album17:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/279228922",
+    album18: "https://striveschool-api.herokuapp.com/api/deezer/album/58448032",
+    album19:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/557619402",
+    album20:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/374523387",
+    album21:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/258772832",
+    album22:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/100896762",
+    album23:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/342924587",
+    album24:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/303950837",
+    album25:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/558810572",
+  };
 
-      albumIds.forEach(id => {
+  const fetchAlbumData = url => {
+    return fetch(url).then(response => response.json());
+  };
+
+  const albumIds = Object.keys(albumContainers);
+
+  Promise.all(albumIds.map(id => fetchAlbumData(albumContainers[id])))
+    .then(albums => {
+      albums.forEach((album, index) => {
+        const albumHtml = `
+          <img id="albumCover${index}" src="${album.cover_medium}" alt="${album.title} cover" style="cursor:pointer;">
+          <p> Artista: ${album.artist.name}</p>
+          <p>Album: ${album.title}</p>
+        `;
+
+        const id = albumIds[index];
         const albumContainer = document.getElementById(id);
         albumContainer.innerHTML = albumHtml;
 
-        const albumCover = albumContainer.querySelector("#albumCover");
+        const albumCover = albumContainer.querySelector(`#albumCover${index}`);
         albumCover.addEventListener("click", () => {
           localStorage.setItem("albumData", JSON.stringify(album));
-          window.location.href = "albumPage.html";
+          const artistName = album.artist.name
+            .replace(/\s+/g, "-")
+            .toLowerCase();
+          window.location.href = `albumPage.html?artist=${artistName}`;
         });
       });
     })
