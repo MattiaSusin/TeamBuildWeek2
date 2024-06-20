@@ -236,8 +236,6 @@ display: block;
     width:100px;
     height:100%;
     object-fit: cover;
-    
-
 }
 
 .img-bar{
@@ -314,3 +312,29 @@ background-color: #4d4d4d;
       display: none;
   }
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.artist-img {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+  }
+  
+  .song-item {
+    display: flex;
+    align-items: center;
+  }
+  .song-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .song-item .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  
