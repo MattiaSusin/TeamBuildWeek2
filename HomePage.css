@@ -105,40 +105,21 @@ cursor: pointer;
     border-radius: 50%;
 }
 
-#tendina {
-    background-color: #2d2d2e; /** Colore di sfondo del menu a tendina (lo stesso del pulsante .btn-dark) */
-    border: none; /** Rimuove il bordo */
-  }
-  
-  
-  #tendina .dropdown-item:hover, 
-  #tendina .dropdown-item:focus {
-    background-color: #495057; /** Colore di sfondo degli elementi del menu al passaggio del mouse */
-  }
-  
-  .dropdown-menu-dark .dropdown-divider {
-    border-color: #6c757d; /** Colore del divisore */
-  }
   .freccie-container{
-    display: flex;
+    display: flex; /* *spostamento nella stessa asse */
     gap: 10px; /* *Spazio tra le frecce */
   }
 
   .freccie{
-    background-color: #343a40; /** Colore di sfondo del cerchio */
-    border-radius: 50%; /* *Forma circolare */
+    background-color: #000000; /** Colore di sfondo del cerchio */
+    border-radius: 50%; /* *Forma tonda */
     padding: 8px; /** Spazio interno */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 30px; /** Larghezza del cerchio */
     height: 30px; /** Altezza del cerchio */
   }
 
   .freccie svg {
     color: #ffffff; /** Colore dell'icona */
-    width: 20px; /** Larghezza dell'icona */
-    height: 20px;  /** Altezza dell'icona */ 
   }
   
 
