@@ -244,3 +244,14 @@ background-color: #4d4d4d;
       display: none;
   }
 }
+
+#title {
+  
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+#title1 {
+  
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

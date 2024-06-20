@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", async function () {
   try {
     const urlParams = new URLSearchParams(window.location.search);
     const artist = urlParams.get("artist");
+    const titleElement = document.getElementById("title");
+    if (titleElement) {
+      titleElement.textContent = artist;
+    }
     const apiUrl = `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artist}`;
 
     const response = await fetch(apiUrl);
