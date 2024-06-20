@@ -39,6 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
       "https://striveschool-api.herokuapp.com/api/deezer/album/303950837",
     album25:
       "https://striveschool-api.herokuapp.com/api/deezer/album/558810572",
+    album26:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/556294552",
+    album27:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/579783251",
+    album28:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/393727427",
+    album29:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/568901281",
+    album30:
+      "https://striveschool-api.herokuapp.com/api/deezer/album/560433462",
+    album31: "https://striveschool-api.herokuapp.com/api/deezer/album/746059",
   };
 
   const fetchAlbumData = url => {
