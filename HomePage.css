@@ -53,13 +53,6 @@ svg{
 }
 
 .btnSalva:hover{
- /*    transition : 0ms;
-padding: 10px 32px;
-transform : translateY(-0px);
-background-color: #1ed760;
-color: #1ed760;
-border: none; */
-
 cursor: pointer;
 }
 .btnPlay{
@@ -78,27 +71,62 @@ cursor: pointer;
     cursor: pointer;
 }
 .btnPlay:hover{
-
-    /*  transition : 0ms;
-    padding: 10px 32px;
-    transform : translateY(-0px);
-    background-color: #1ed760;
-    color: #1ed760;
-    border: none */
     cursor: pointer;
+    color: #1ed760;
+    background-color: #1ed760;
     } 
 
+    .btnAnnunci{
+        font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 13px;
+color: #818181;
+background-color: #383838;
+padding: 10px 30px;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
 
-.imgAlbumColCentr{
-    margin: 20px;
-    width: 216px;
-    margin-left: 0%;
 }
 
+#imgAlbumCentr{
+    width: 216px;
+    margin-left:0;
+}
+.imgBtn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+  .freccie-container{
+    display: flex; /* *spostamento nella stessa asse */
+    gap: 10px; /* *Spazio tra le frecce */
+  }
+
+  .freccie{
+    background-color: #000000; /** Colore di sfondo del cerchio */
+    border-radius: 50%; /* *Forma tonda */
+    padding: 8px; /** Spazio interno */
+    width: 30px; /** Larghezza del cerchio */
+    height: 30px; /** Altezza del cerchio */
+  }
+
+  .freccie svg {
+    color: #ffffff; /** Colore dell'icona */
+  }
+  
 
 .cardCenSix{
     background-color: #2a2a2a;
     border-radius: 2%;
+
 }
 
 #cardsLatDx{
