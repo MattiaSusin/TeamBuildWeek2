@@ -167,7 +167,7 @@ hr{
     width: 300px;
     height: 772px;
     overflow: auto;
-    scrollbar-color: #4d4d4d #000000;
+    scrollbar-color: #4d4d4d #000000; 
 }
 
 
@@ -311,4 +311,66 @@ background-color: #4d4d4d;
   #musicNav {
       display: none;
   }
+}
+
+
+.card1 {
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    width: 350px; 
+    height: 100px; 
+    color: white;
+    display: flex;
+    overflow: hidden;
+}
+.card1 img {
+    height: 100%;
+    width: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card1-body {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.card1-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.card2{
+    background-color: #2c2c2c;
+
+}
+
+
+.card2 {
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    /* width: 350px; */ 
+    /* height: 100px; */ 
+    color: white;
+    display: flex;
+    overflow: hidden;
+}
+.card2 img {
+    height: 100%;
+    width: auto;
+    border-top-left-radius: 10px;
+}
+.card2-body {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.card2-title {
+    font-size: 1rem;
+    margin-bottom: 0;
 }
