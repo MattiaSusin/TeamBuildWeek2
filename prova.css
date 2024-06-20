@@ -305,3 +305,8 @@ ul{
 h1,p{
     cursor: pointer;
 }
+
+.scrollbarColCen{ /* TODO DA METTERE DENTRO AL JS */
+    overflow: auto;
+    scrollbar-color: #4d4d4d #000000;
+}
