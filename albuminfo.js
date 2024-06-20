@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const artistName = urlParams.get("artist");
+
   const albumData = JSON.parse(localStorage.getItem("albumData"));
-  if (albumData) {
+  if (albumData && albumData.artist.name.replace(/\s+/g, "-").toLowerCase() === artistName) {
     const albumDetailsContainer = document.getElementById("album-details");
 
     const formatDuration = (seconds) => {
@@ -9,93 +12,38 @@ document.addEventListener("DOMContentLoaded", () => {
       return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
     };
 
-    const albumDetailsHtml = `
-    <div class="container-fluid">
-      <div class="row align-items-center mt-5">
-        <div class="col-2 d-flex align-items-center">
-          <img class="img" src="${albumData.cover_medium}" alt="${albumData.title}" />
-        </div>
-        <div class="col-10 d-flex flex-column justify-content-between">
-          <h1 class="text-light m-0">${albumData.title}</h1>
-          <div class="d-flex align-items-center mt-3">
-            <img class="artist-img rounded-circle me-2" src="./assets/imgs/main/image-12.jpg" alt="artistImage" />
-            <p class="text-light m-0">${albumData.artist.name}</p>
-            <p class="text-light ms-2 m-0">${new Date(albumData.release_date).toDateString()}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-3 mb-3">
-            <button type="button" class="btn btn-success">Play</button>
-            <button type="button" class="btn btn-outline-light">♥</button>
-            <button type="button" class="btn btn-outline-light">...</button>
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <ol class="ms-4 mt-3">
-                  <li class="mb-3 song-item">
-                    <div class="details">
-                      <span>#TITOLO</span>
-                      <span class="ms-5">RIPRODUZIONI</span>
-                      <span class="ms-3">DURATION</span>
-                    </div>
-                  </li>
-                </ol>
-                <div id="album-details"></div>
-                <hr class="text-secondary" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-    
-    <ul class="track-list ms-4 mt-3">
-      ${albumData.tracks.data
-        .map(
-          (track) => `
+    const trackList = albumData.tracks.data
+      .map((track) => {
+        return `
         <li class="list-group-item">
           <div class="row">
-        
-            <div class="col-6 mt-3">${track.title} <br> ${track.artist.name}</div>
-            <div class="col-3 mt-3">${track.rank}</div>
-            <div class="col-3 mt-3">${formatDuration(track.duration)}</div>
-            
+            <div class="col mt-3">
+              ${track.title} <br>
+              ${track.artist.name}
+            </div>
+            <div class="col mt-3">${track.rank}</div>
+            <div class="col mt-3">${formatDuration(track.duration)}</div>
           </div>
         </li>
-      `
-        )
-        .join("")}
-    </ul>
-  `;
+      `;
+      })
+      .join("");
 
-    /*llll*/
-
-    ` <h1 class="text-light m-0">${albumData.title}</h1>
-          <img class="img" src="${albumData.cover_medium}" alt="${albumData.title} cover">
-          <p><strong>Artist:</strong> ${albumData.artist.name}</p>
-          <p><strong>Release Date:</strong> ${new Date(albumData.release_date).toDateString()}</p>
-          <h2>Tracks</h2>
-          <ul class="track-list">
-            ${albumData.tracks.data
-              .map(
-                (track) => `
-              <li>
-                <p><strong></strong> ${track.title}</p>
-                <p><strong></strong> ${track.artist.name}</p>
-                <p><strong></strong> ${track.rank}</p>
-                <p><strong></strong> ${formatDuration(track.duration)}</p>
-              </li>
-            `
-              )
-              .join("")}
-          </ul>
-        `;
+    const albumDetailsHtml = `
+      <h1>${albumData.title}</h1>
+      <img src="${albumData.cover_medium}" alt="${albumData.title} cover">
+      <p><a href="./ArtistPage.html?artist=${encodeURIComponent(albumData.artist.name)}">
+        <strong>Artist:</strong> ${albumData.artist.name}
+      </a></p>
+      <p><strong>Release Date:</strong> ${new Date(albumData.release_date).toDateString()}</p>
+      
+      <ul class="track-list list-group">
+        ${trackList}
+      </ul>
+    `;
 
     albumDetailsContainer.innerHTML = albumDetailsHtml;
   } else {
-    document.body.innerHTML = "<p>Not</p>";
+    document.body.innerHTML = "<p>Album not found.</p>";
   }
 });
