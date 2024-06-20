@@ -91,7 +91,7 @@ color: white;
 margin-right:30px;
 }
 
-svg,p,h1,span,img{
+svg,p,h1,span,img,button{
     cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ svg,p,h1,span,img{
   
 
 
-.svgPlay:hover {
+button,svg:hover {
     opacity: 0.8;
 }
 
