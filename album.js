@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     album4: "https://striveschool-api.herokuapp.com/api/deezer/album/75621062",
     album5: "https://striveschool-api.herokuapp.com/api/deezer/album/69804312",
     album6: "https://striveschool-api.herokuapp.com/api/deezer/album/13994766",
-
     album7: "https://striveschool-api.herokuapp.com/api/deezer/album/14048552",
     album8: "https://striveschool-api.herokuapp.com/api/deezer/album/533077002",
     album9: "https://striveschool-api.herokuapp.com/api/deezer/album/451171485",
@@ -43,7 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const fetchAlbumData = url => {
-    return fetch(url).then(response => response.json());
+    return fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .catch(error => {
+        console.error("Error fetching album data:", error);
+        throw error;
+      });
   };
 
   const albumIds = Object.keys(albumContainers);
@@ -51,6 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
   Promise.all(albumIds.map(id => fetchAlbumData(albumContainers[id])))
     .then(albums => {
       albums.forEach((album, index) => {
+        if (album.error) {
+          console.error("Error in album data:", album.error);
+          return;
+        }
+
         const albumHtml = `
           <img id="albumCover${index}" src="${album.cover_medium}" alt="${album.title} cover" style="cursor:pointer;">
           <p> Artista: ${album.artist.name}</p>
@@ -59,23 +73,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const id = albumIds[index];
         const albumContainer = document.getElementById(id);
-        albumContainer.innerHTML = albumHtml;
 
-        const albumCover = albumContainer.querySelector(`#albumCover${index}`);
-        albumCover.addEventListener("click", () => {
-          localStorage.setItem("albumData", JSON.stringify(album));
-          const artistName = album.artist.name
-            .replace(/\s+/g, "-")
-            .toLowerCase();
-          window.location.href = `albumPage.html?artist=${artistName}`;
-        });
+        if (albumContainer) {
+          albumContainer.innerHTML = albumHtml;
+
+          const albumCover = albumContainer.querySelector(
+            `#albumCover${index}`
+          );
+          albumCover.addEventListener("click", () => {
+            localStorage.setItem("albumData", JSON.stringify(album));
+            const artistName = album.artist.name
+              .replace(/\s+/g, "-")
+              .toLowerCase();
+            window.location.href = `albumPage.html?artist=${artistName}`;
+          });
+        } else {
+          console.error(`Element with id ${id} not found.`);
+        }
       });
     })
     .catch(error => {
       albumIds.forEach(id => {
         const albumContainer = document.getElementById(id);
-        albumContainer.innerHTML = "<p>Album non trovato.</p>";
+        if (albumContainer) {
+          albumContainer.innerHTML = "<p>Album non trovato.</p>";
+        }
       });
-      console.error("Error fetching album data:", error);
+      console.error("Error in Promise.all:", error);
     });
 });
