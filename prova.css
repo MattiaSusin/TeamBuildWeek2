@@ -1,307 +1,287 @@
-html, body {
-    body {
-        background-image: linear-gradient(180deg,#D9BC4D,#4C421D,#181818);
-      }
-    margin: 0;
+html,
+body {
+  body {
+    background-image: linear-gradient(180deg, #d9bc4d, #4c421d, #181818);
+  }
+  margin: 0;
 }
 
-#page{
-    min-height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+#page {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 #ul1 {
-    list-style-type: none;
-    }
-li{
-    cursor: pointer;
+  list-style-type: none;
 }
-img{
-    cursor: pointer;
+li {
+  cursor: pointer;
 }
-svg{
-    cursor: pointer;
+img {
+  cursor: pointer;
 }
-
-
-#card6{
-    margin-top: 22px; 
+svg {
+  cursor: pointer;
 }
 
-#imgAlbumCentr{
-    width: 216px;
-    margin-left:0;
+#card6 {
+  margin-top: 22px;
 }
 
-.artist-img{
- width: 30px;
- border-radius: 50%;
-}
-.imgBtn{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+#imgAlbumCentr {
+  width: 216px;
+  margin-left: 0;
 }
 
-  .freccie-container{
-    display: flex; /* *spostamento nella stessa asse */
-    gap: 10px; /* *Spazio tra le frecce */
-  }
-
-  .freccie{
-    background-color: #7d6c2c ; /** Colore di sfondo del cerchio */
-    border-radius: 50%; /* *Forma tonda */
-    padding: 8px; /** Spazio interno */
-    width: 30px; /** Larghezza del cerchio */
-    height: 30px; /** Altezza del cerchio */
-  }
-
-   svg {
-   color: #ffffff;
-  }
-  
-
-.cardCenSix{
-    background-color: #2a2a2a;
-    border-radius: 2%;
-
+.artist-img {
+  width: 30px;
+  border-radius: 50%;
+}
+.imgBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
-#cardsLatDx{
-    border-radius: 2%;
+.freccie-container {
+  display: flex; /* *spostamento nella stessa asse */
+  gap: 10px; /* *Spazio tra le frecce */
+}
+
+.freccie {
+  background-color: #7d6c2c; /** Colore di sfondo del cerchio */
+  border-radius: 50%; /* *Forma tonda */
+  padding: 8px; /** Spazio interno */
+  width: 30px; /** Larghezza del cerchio */
+  height: 30px; /** Altezza del cerchio */
+}
+
+svg {
+  color: #ffffff;
+}
+
+.cardCenSix {
+  background-color: #2a2a2a;
+  border-radius: 2%;
+}
+
+#cardsLatDx {
+  border-radius: 2%;
 }
 
 .card {
-    border: none;
-    object-fit: cover;
-    padding: 0;
-
+  border: none;
+  object-fit: cover;
+  padding: 0;
 }
 
-#collumnSx{
-    background-color: #000000;
-    height: 100vh;
+#collumnSx {
+  background-color: #000000;
+  height: 100vh;
 }
 
-hr{
-    background-color: #141414;
+hr {
+  background-color: #141414;
 }
 
-.scrollbar{
-    width: 300px;
-    height: 527px;
-    overflow: auto;
-    scrollbar-color: #4d4d4d #000000;
-
+.scrollbar {
+  width: 300px;
+  height: 527px;
+  overflow: auto;
+  scrollbar-color: #4d4d4d #000000;
 }
-#collumnDx{
-    background-color: #000000;
-    height: 100vh;
-    
+#collumnDx {
+  background-color: #000000;
+  height: 100vh;
 }
 
-.scrollbarDx{
-    width: 300px;
-    height: 772px;
-    overflow: auto;
-    scrollbar-color: #4d4d4d #000000;
+.scrollbarDx {
+  width: 300px;
+  height: 772px;
+  overflow: auto;
+  scrollbar-color: #4d4d4d #000000;
 }
-#cardsLatDx{
-    border-radius: 4%;
+#cardsLatDx {
+  border-radius: 4%;
 }
 
 .imgCardColDx {
-    border-radius: 50%;
-    width: 38px;
+  border-radius: 50%;
+  width: 38px;
 }
 
-.contImgSx{
-width: 50px;
+.contImgSx {
+  width: 50px;
 }
 
-.contTextDx{
-    width: 242px;
-    
+.contTextDx {
+  width: 242px;
 }
 
-.contTextInt{
-height: 80px;
+.contTextInt {
+  height: 80px;
 }
-#collumnCentr{
-background-color: #161616;
-
+#collumnCentr {
+  background-color: #161616;
 }
-.scrollbarC{
-    height: 849px;
-    overflow: auto;
-    scrollbar-color: #4d4d4d #000000;
-
+.scrollbarC {
+  height: 849px;
+  overflow: auto;
+  scrollbar-color: #4d4d4d #000000;
 }
 
-
-.navbar{
-    background-color: #161616;
-    height:75px ;
-    margin-left: auto;
-
+.navbar {
+  background-color: #161616;
+  height: 75px;
+  margin-left: auto;
 }
-.ul2{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
+.ul2 {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
 }
 
- #friends{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
- 
- }
-
-.prova{
-display: block;
-
-}
-.cardImg{
-    object-fit: fill;
-    display: block;
-    width: 100%;
-    height: 100%;
+#friends {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-#imgSix{
-    width:100px;
-    height:100%;
-    object-fit: cover;
-    
-
+.prova {
+  display: block;
+}
+.cardImg {
+  object-fit: fill;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.img-bar{
-    width: 20px;
-    height: 20px;
+#imgSix {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
 }
-.img-music{
-    width: 77px;
-    height: 77px;
+
+.img-bar {
+  width: 20px;
+  height: 20px;
+}
+.img-music {
+  width: 77px;
+  height: 77px;
 }
 #fixed {
-   
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    min-width: 768px;
-   
-    bottom: 0px;
-    border-top-width: 1px;
-    border-top-style: solid;
-  
-    height: var(--layout-player-height);
-    left: 0px;
-  
-    position: fixed;
-    right: 0px;
-    z-index: 300;
-}
-.navbar{
-    background-color: #161616;
-    
-    margin-left: auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  min-width: 768px;
 
+  bottom: 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+
+  height: var(--layout-player-height);
+  left: 0px;
+
+  position: fixed;
+  right: 0px;
+  z-index: 300;
+}
+.navbar {
+  background-color: #161616;
+
+  margin-left: auto;
 }
 .timer {
-    width: 100%;
-    height: 10px;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    background-color: #4d4d4d;
-    margin-right: 10px;
-    margin-top: 8px;
-    margin-left: -37px;
+  width: 100%;
+  height: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #4d4d4d;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-left: -37px;
 }
 .timer1 {
-   
-left: 0%;
-top: 0%;
+  left: 0%;
+  top: 0%;
 
-    width: 15%;
-height: 9px;
-border: 1px solid transparent;
-border-radius: 20px;
-background-color: white;
+  width: 15%;
+  height: 9px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: white;
 }
 .timer2 {
-  
-left: 89%;
-top: 47%;
-margin-left: 20px;
-width: 20%;
-height: 10px;
-border: 1px solid transparent;
-border-radius: 20px;
-background-color: #4d4d4d;
+  left: 89%;
+  top: 47%;
+  margin-left: 20px;
+  width: 20%;
+  height: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #4d4d4d;
 }
 .col-1 {
   width: auto;
 }
 @media (max-width: 992px) {
   #musicNav {
-      display: none;
+    display: none;
   }
 }
 
-
-
-.nameAlbum{
-display: flex;
+.nameAlbum {
+  display: flex;
 }
 
-.h1Album{
-    width: 100%;
-    font-size: 4rem;
-    white-space: nowrap;
+.h1Album {
+  width: 100%;
+  font-size: 4rem;
+  white-space: nowrap;
 }
-
-.svgPlay{
-    background-color: #00410b; /** Colore di sfondo del cerchio */
-    border-radius: 50%; /* *Forma tonda */
-    padding: 8px; /** Spazio interno */
-    width: 30px; /** Larghezza del cerchio */
-    height: 30px; /** Altezza del cerchio */
-}
-
-.colScrollDx{
-    height: 766px;
-    width: 308px;
-    padding-right: 11px;
-}
-
 
 .svgPlay {
-    width: 50px; 
-    height: 50px; 
-    background-color: #1ed760; 
-    border-radius: 50%; /
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #00410b; /** Colore di sfondo del cerchio */
+  border-radius: 50%; /* *Forma tonda */
+  padding: 8px; /** Spazio interno */
+  width: 30px; /** Larghezza del cerchio */
+  height: 30px; /** Altezza del cerchio */
+}
+
+.colScrollDx {
+  height: 766px;
+  width: 308px;
+  padding-right: 11px;
+}
+
+.svgPlay {
+  width: 50px;
+  height: 50px;
+  background-color: #1ed760;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .svgPlay svg {
-    width: 22px; 
-    height: 30px; 
-    fill: black; 
-    cursor: pointer;
+  width: 22px;
+  height: 30px;
+  fill: black;
+  cursor: pointer;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
-h1,p{
-    cursor: pointer;
-}z
+h1,
+p {
+  cursor: pointer;
+}
