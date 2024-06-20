@@ -15,39 +15,42 @@ document.addEventListener("DOMContentLoaded", () => {
       return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
     };
 
+    const trackList = albumData.tracks.data
+      .map(track => {
+        return `
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col mt-3">
+              ${track.title} <br>
+              ${track.artist.name}
+            </div>
+            <div class="col mt-3">${track.rank}</div>
+            <div class="col mt-3">${formatDuration(track.duration)}</div>
+          </div>
+        </li>
+      `;
+      })
+      .join("");
+
     const albumDetailsHtml = `
-          <h1>${albumData.title}</h1>
-          <img src="${albumData.cover_medium}" alt="${albumData.title} cover">
-          <p><a href="./ArtistPage.html?artist=${encodeURIComponent(
-            albumData.artist.name
-          )}"> <strong>Artist:</strong> ${albumData.artist.name} </a></p>
-          <p><strong>Release Date:</strong> ${new Date(
-            albumData.release_date
-          ).toDateString()}</p>
-          
-          <ul class="track-list">
-            ${albumData.tracks.data
-              .map(
-                track => `
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col mt-3">${track.title} </br> ${
-                  track.artist.name
-                }</div>
-                      <div class="col mt-3">${track.rank}</div>
-                      <div class="col mt-3">${formatDuration(
-                        track.duration
-                      )}</div>
-                    </div>
-                  </li>
-            `
-              )
-              .join("")}
-          </ul>
-        `;
+      <h1>${albumData.title}</h1>
+      <img src="${albumData.cover_medium}" alt="${albumData.title} cover">
+      <p><a href="./ArtistPage.html?artist=${encodeURIComponent(
+        albumData.artist.name
+      )}">
+        <strong>Artist:</strong> ${albumData.artist.name}
+      </a></p>
+      <p><strong>Release Date:</strong> ${new Date(
+        albumData.release_date
+      ).toDateString()}</p>
+      
+      <ul class="track-list list-group">
+        ${trackList}
+      </ul>
+    `;
 
     albumDetailsContainer.innerHTML = albumDetailsHtml;
   } else {
-    document.body.innerHTML = "<p>Album non trovato.</p>";
+    document.body.innerHTML = "<p>Album not found.</p>";
   }
 });

@@ -277,3 +277,19 @@ background-color: #4d4d4d;
     width: 242px;
     
 }
+
+ol.ms-4.mt-3 {
+    counter-reset: song-counter;
+  }
+  
+  ol.ms-4.mt-3 li {
+    list-style-type: none;
+    counter-increment: song-counter;
+  }
+  
+  ol.ms-4.mt-3 li::before {
+    content: counter(song-counter) "";
+    font-weight: bold;
+    margin-right: 10px;
+    opacity:50%;
+  }
