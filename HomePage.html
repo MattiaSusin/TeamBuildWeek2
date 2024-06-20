@@ -16,8 +16,8 @@
   <body>
     <div id="page" class="container-fluid">
       <!-- ! INIZIO CONTENITORE 3 COLONNE PRINCIPALI -->
-      <div class="row">
-        <div class="col-2" id="collumnSx">
+      <div class="row ">
+        <div class="col-2 d-none d-sm-block" id="collumnSx">
           <!-- ! INIZIO COLONNA SINISTRA -->
           <div class="mt-4">
             <!-- ? INIZIO MENU -->
@@ -469,7 +469,10 @@
           <!-- ? JS -->
         </div>
         <!-- ! INIZIO 
-        </div>                                      <!-- ! FINE COLONNA SINISTRA -->
+
+        </div>                                      <!-- ! INIZIO COLONNA SINISTRA -->
+
+
         <div class="col-8 text-light scrollbarC" id="collumnCentr">
           <!-- ! INIZIO COLONNA CENTRALE -->
 
@@ -524,7 +527,7 @@
                     class="imgBtn"
                   />
                   Davide Romano
-                  <ul class="dropdown-menu text-light" id="tendina">
+                  <ul class="dropdown-menu text-light bg-dark" id="tendina">
                     <li>
                       <a class="dropdown-item text-light" href="#"
                         ><a class="dropdown-item text-light" href="#"
@@ -759,10 +762,10 @@
               <h6>VISUALIZZA TUTTO</h6>
             </div>
           </div>
-
+          <!-- ?PRIMA RIGA ALBUM -->
           <div class="row d-flex justify-content-between mx-1">
-            <div class="card col-2" id="album1">
-              <img src="" />
+            <div class="card col-2 rounded" id="album1">
+              <img src="" class=""/>
               <div class="card-body">
                 <p class="card-text">Some</p>
               </div>
@@ -984,7 +987,7 @@
           </div>
           <!-- ?FINE QUARTA RIGA ALBUM -->
 
-          <div class="mt-5 mb-3">
+          <div class="mt-5 mb-5">
             <!-- ?INIZIO QUINTA RIGA ALBUM -->
             <div class="row d-flex justify-content-between mx-1">
               <div class="card col-2" id="album21">
@@ -1043,10 +1046,9 @@
         </div>
         <!-- ! FINE COLONNA CENTRALE -->
 
-        <div class="col-2 text-light" id="collumnDx">
-          <!-- !INIZIO CONTENITORE LAT DX  -->
-
-          <div class="row d-flex justify-content-between mt-4">
+        <div class="col-2 text-light d-none d-sm-block" id="collumnDx"> 
+         
+          <div class="row d-flex justify-content-between mt-4 ">
             <p class="col-6 fw-bold">Attività Amici</p>
             <div class="col-6 d-flex flex-row-reverse">
               <svg
@@ -1078,7 +1080,7 @@
               </svg>
             </div>
           </div>
-          <div class="me-2 scrollbar">
+          <div class="me-2 scrollbarDx">
             <!-- ????????????????????????????????? PRIMO AMICO??????????????????????????????????????????????? -->
             <div class="d-flex justify-content-between contTotDx col-12 mt-4">
               <div class="contImgSx p-1 col-2">
@@ -1621,6 +1623,9 @@
         <!-- ! FINE CONTENITORE 3 COLONNE PRINCIPALI -->
       </div>
       <!-- !INIZIO CONTENITORE LAT DX  -->
+        </div>  <!-- ! FINE COLONNA SINISTRA -->
+        
+                                   
 
       <div>
         <!-- ! INIZIO BAR MUSIC -->
