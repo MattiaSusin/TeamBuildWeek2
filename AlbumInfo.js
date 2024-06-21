@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const trackList = albumData.tracks.data
       .map(track => {
         return `
-          <li class="list-group-item ">
+         <li class="list-group-item ">
             <div class="row rowDettails">
               <div class="col-6 mt-3">
-                ${track.title} <br>
-                ${track.artist.name}
+               <span class="fw-bold fs-5"> ${track.title} </span> <br>
+               <span class="opacity-50"> ${track.artist.name} </span>
               </div>
-              <div class="col-3 mt-3">${track.rank}</div>
-              <div class="col-3 mt-3 durationEdit">${formatDuration(
+              <div class="col-3 mt-3 opacity-50">${track.rank}</div>
+              <div class="col-3 mt-3 durationEdit opacity-50">${formatDuration(
                 track.duration
               )}</div>
             </div>
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             albumData.title
           }</h1></div>
           <div class="nameAlbum mt-5">
-            <div><img src="./assets/imgs/search/image-4.jpg" alt="" class="artist-img me-1"></div>
+            <div><img src="${albumData.cover_medium}" alt="" class="artist-img me-1"></div>
             <div>
               <p>
                 <a href="./ArtistPage.html?artist=${encodeURIComponent(
