@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <span class="text-white text-light">${
               albumData.artist.name
             } • ${new Date(albumData.release_date).toDateString()} •</span>
-            <span class="text-light-emphasis">53 min 20 sec</span></p></div>
+            <span class="textColor">53 min 20 sec</span></p></div>
         </div>
       </div>
     `;
