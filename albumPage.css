@@ -87,59 +87,57 @@ hr {
 }
 #fixed {
    
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    min-width: 768px;
-   
-    bottom: 0px;
-    border-top-width: 1px;
-    border-top-style: solid;
-  
-    height: var(--layout-player-height);
-    left: 0px;
-  
-    position: fixed;
-    right: 0px;
-    z-index: 300;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  min-width: 768px;
+ 
+  bottom: 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+
+  height: var(--layout-player-height);
+  left: 0px;
+
+  position: fixed;
+  right: 0px;
+  z-index: 300;
 }
 .navbar{
-    background-color: #161616;
-    
-    margin-left: auto;
+  background-color: #161616;
+  
+  margin-left: auto;
 
 }
 .timer {
-    position: absolute;
-left: 38%;
-top: 49%;
-
-    width: 20%;
-height: 10px;
-border: 1px solid transparent;
-border-radius: 20px;
-background-color: #4d4d4d;
+  width: 100%;
+  height: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #4d4d4d;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-left: -37px;
 }
-
 .timer1 {
-   
+ 
 left: 0%;
 top: 0%;
 
-    width: 15%;
+  width: 15%;
 height: 9px;
 border: 1px solid transparent;
 border-radius: 20px;
 background-color: white;
 }
 .timer2 {
-  
+
 left: 89%;
 top: 47%;
 margin-left: 20px;
-    width: 20%;
+  width: 20%;
 height: 10px;
 border: 1px solid transparent;
 border-radius: 20px;

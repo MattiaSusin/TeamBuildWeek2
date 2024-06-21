@@ -209,17 +209,15 @@ li span:not(:first-child)  { opacity: 50%;}
 
 }
 .timer {
-    position: absolute;
-left: 38%;
-top: 49%;
-
-    width: 20%;
-height: 10px;
-border: 1px solid transparent;
-border-radius: 20px;
-background-color: #4d4d4d;
+    width: 100%;
+    height: 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #4d4d4d;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-left: -37px;
 }
-
 .timer1 {
    
 left: 0%;
@@ -285,3 +283,19 @@ background-color: #4d4d4d;
     width: 242px;
     
 }
+
+ol.ms-4.mt-3 {
+    counter-reset: song-counter;
+  }
+  
+  ol.ms-4.mt-3 li {
+    list-style-type: none;
+    counter-increment: song-counter;
+  }
+  
+  ol.ms-4.mt-3 li::before {
+    content: counter(song-counter) "";
+    font-weight: bold;
+    margin-right: 10px;
+    opacity:50%;
+  }
