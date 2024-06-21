@@ -486,37 +486,107 @@
 
         <-- Center Column -->
         <div class="collumnCen col-8 bg-dark g-0 ">
-          <div class="bg-test">
-            <div>
-              <span>
-                <svg
+          <div class="bg-test imgArtist">
+            <div class="d-flex justify-content-between">
+              <div class="freccie-container">
+                <a href="./HomePage.html">
+  
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="26"
+                  width="16"
+                  height="16"
                   fill="currentColor"
-                  class="bi bi-chevron-left"
+                  class="freccie bi bi-chevron-left toggle-split"
                   viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                </a>
+                <!-- ?SVG FRECCE-->
+                <a href="./ArtistPage.html">
+  
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="freccie bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- ?SVG FRECCE-->
+  
+              <div class="btn-group">
+                <button class="btn btn-dark btn-sm rounded-pill dropdown-toggle-split dropdown-toggle me-2" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                  <img
+                    src="./assets/imgs/main/image-9.jpg"
+                    alt=""
+                    class="imgBtn"
                   />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="26"
-                  fill="currentColor"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                  />
-                </svg>
-              </span>
+                  Davide Romano
+                  <ul class="dropdown-menu text-light bg-dark" id="tendina">
+                    <li>
+                      <a class="dropdown-item text-light" href="#"
+                        ><a class="dropdown-item text-light" href="#"
+                          >Account</a
+                        >
+                        <!-- <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                      </svg></span> --></a
+                      >
+                    </li>
+                    <div class="d-flex justify-content-between">
+                      <li>
+                        <a class="dropdown-item text-light" href="#"
+                          ><a class="dropdown-item text-light" href="#"
+                            >Impostazioni piano Familiare</a
+                          >
+                          <!-- <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                      </svg></span> --></a
+                        >
+                      </li>
+                    </div>
+                    <li>
+                      <a class="dropdown-item text-light" href="#"
+                        ><a class="dropdown-item text-light" href="#"
+                          >Profilo</a
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#"
+                        ><a class="dropdown-item text-light" href="#"
+                          >Impostazioni</a
+                        ></a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#"
+                        ><a class="dropdown-item text-light" href="#"
+                          >Logout</a
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </button>
+              </div>
             </div>
+            
+          
             <!-- Content for the page -->
             <div class="container">
               <div class="cent">
