@@ -27,6 +27,13 @@ h1,
 p {
   cursor: pointer;
 }
+.rowDettails{
+  width: 1250px;
+}
+.durationEdit{
+padding-left: 85px;
+}
+
 
 #card6 {
   margin-top: 22px;
