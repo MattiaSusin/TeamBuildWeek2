@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const trackList = albumData.tracks.data
       .map(track => {
         return `
-        <li class="list-group-item">
+        <li class="list-group-item ">
           <div class="row">
-            <div class="col mt-3">
+            <div class="col-6 mt-3">
               ${track.title} <br>
               ${track.artist.name}
             </div>
-            <div class="col mt-3">${track.rank}</div>
-            <div class="col mt-3">${formatDuration(track.duration)}</div>
+            <div class="col-3 mt-3">${track.rank}</div>
+            <div class="col-3 mt-3">${formatDuration(track.duration)}</div>
           </div>
         </li>
       `;

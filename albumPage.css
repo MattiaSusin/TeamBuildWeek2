@@ -36,7 +36,13 @@ p {
   width: 216px;
   margin-left: 0;
 }
+.scrollbarColCen{
+  width: 1256px;
+  height: 352px;
+  overflow: auto;
+  scrollbar-color: #4d4d4d #000000
 
+}
 .artist-img {
   width: 30px;
   border-radius: 50%;
