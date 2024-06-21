@@ -4,7 +4,8 @@ body {
 }
 
 body {
-  background-image: linear-gradient(180deg, #d9bc4d, #4c421d, #181818);
+  background: rgb(98,89,89);
+background: linear-gradient(90deg, rgba(98,89,89,1) 0%, rgba(98,84,84,1) 35%, rgba(6,6,6,1) 100%);
 }
 
 #page {
@@ -53,7 +54,7 @@ p {
 }
 
 .freccie {
-  background-color: #7d6c2c;
+  background-color: #2c2c2c;
   border-radius: 50%;
   padding: 8px;
   width: 30px;
@@ -290,4 +291,5 @@ ul {
 .details > span {
   flex-basis: 33%;
   text-align: left;
+  color: white;
 }
