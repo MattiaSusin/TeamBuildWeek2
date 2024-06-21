@@ -38,7 +38,12 @@ document.addEventListener("DOMContentLoaded", async function () {
       image.alt = song.title;
       image.classList.add("me-3");
 
-      const details = document.createElement("div");
+      const details = document.createElement("div");         //<div class="d-flex justify-content-between">
+                                                             //   <img src="" alt="" class"col-2"> 
+                                                             //   <div class:"col-6"><p></p></div>
+                                                             //   <div class"col-2"><p></p></div>
+                                                             //   <div class"col-2" ><p></p></div>
+                                                             //</div>
       details.classList.add(
         "details",
         "d-flex",
