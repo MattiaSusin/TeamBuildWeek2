@@ -4,8 +4,13 @@ body {
 }
 
 body {
-  background: rgb(98,89,89);
-background: linear-gradient(90deg, rgba(98,89,89,1) 0%, rgba(98,84,84,1) 35%, rgba(6,6,6,1) 100%);
+  background: rgb(98, 89, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 89, 89, 1) 0%,
+    rgba(98, 84, 84, 1) 35%,
+    rgba(6, 6, 6, 1) 100%
+  );
 }
 
 #page {
@@ -27,14 +32,14 @@ h1,
 p {
   cursor: pointer;
 }
-.rowDettails{
+.rowDettails {
   width: 1250px;
 }
-.durationEdit{
-padding-left: 85px;
+.durationEdit {
+  padding-left: 85px;
 }
 
-.textColor{
+.textColor {
   color: #848484;
 }
 
@@ -46,18 +51,16 @@ padding-left: 85px;
   width: 216px;
   margin-left: 0;
 }
-.scrollbarColCen{
+.scrollbarColCen {
   width: 1256px;
   height: 352px;
   overflow: auto;
-  scrollbar-color: #4d4d4d #000000
-
+  scrollbar-color: #4d4d4d #000000;
 }
 .artist-img {
   width: 30px;
   border-radius: 50%;
 
-  height: 50px;
   border-radius: 50%; /* Rende l'immagine rotonda */
   object-fit: cover; /* Assicura che l'immagine si adatti al contenitore */
   margin-right: 10px; /* Spazio tra l'immagine e il testo */
@@ -271,7 +274,7 @@ hr {
   width: 100%;
   font-size: 4rem;
   white-space: nowrap;
-
+  font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
