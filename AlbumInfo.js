@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
           <li class="list-group-item ">
             <div class="row rowDettails">
               <div class="col-6 mt-3">
-                ${track.title} <br>
-                ${track.artist.name}
+               <span class="fw-bold fs-5"> ${track.title} </span> <br>
+               <span class="opacity-50"> ${track.artist.name} </span>
               </div>
-              <div class="col-3 mt-3">${track.rank}</div>
-              <div class="col-3 mt-3 durationEdit">${formatDuration(
+              <div class="col-3 mt-3 opacity-50">${track.rank}</div>
+              <div class="col-3 mt-3 durationEdit opacity-50">${formatDuration(
                 track.duration
               )}</div>
             </div>
