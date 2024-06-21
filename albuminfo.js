@@ -10,15 +10,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const albumDetailsContainer = document.getElementById("album-details");
     const trackListContainer = document.getElementById("tracklist-container");
 
-    const formatDuration = seconds => {
-      const minutes = Math.floor(seconds / 60);
-      const remainingSeconds = seconds % 60;
-      return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
-    };
+    const albumData = JSON.parse(localStorage.getItem("albumData"));
+    if (
+      albumData &&
+      albumData.artist.name.replace(/\s+/g, "-").toLowerCase() === artistName
+    ) {
+      const albumDetailsContainer = document.getElementById("album-details");
+      const trackListContainer = document.getElementById("tracklist-container");
 
-    const trackList = albumData.tracks.data
-      .map(track => {
-        return `
+      const formatDuration = seconds => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
+      };
+
+      const trackList = albumData.tracks.data
+        .map(track => {
+          return `
         <li class="list-group-item ">
           <div class="row rowDettails">
             <div class="col-6 mt-3">
@@ -32,10 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </li>
       `;
-      })
-      .join("");
+        })
+        .join("");
 
-    const albumDetailsHtml = `
+      const albumDetailsHtml = `
       <div class="ms-4 mt-3">
         <img src="${albumData.cover_medium}" alt="${albumData.title} cover">
       </div>
@@ -56,9 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `;
 
-    albumDetailsContainer.innerHTML = albumDetailsHtml;
-    trackListContainer.innerHTML = trackList;
-  } else {
-    document.body.innerHTML = "<p>Album not found.</p>";
+      albumDetailsContainer.innerHTML = albumDetailsHtml;
+      trackListContainer.innerHTML = trackList;
+    } else {
+      document.body.innerHTML = "<p>Album not found.</p>";
+    }
   }
 });

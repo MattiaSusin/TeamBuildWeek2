@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./albumPage.css" />
+    <link rel="stylesheet" href="./prova.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Home Page</title>
   </head>
@@ -22,27 +22,6 @@
           <div class="mt-4">
             <!-- ? INIZIO MENU -->
             <ul class="text-light" id="ul1">
-              <li>
-                <span class="me-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-three-dots"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
-                    />
-                  </svg> </span
-                ><a
-                  href="./HomePage.html"
-                  class="text-white text-decoration-none"
-                  >Home</a
-                >
-              </li>
-              <li>
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,16 +52,8 @@
                       d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"
                     ></path>
                   </svg>
-               
-                </span>>
-                <div class="search-container">
-                  <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search for an artist"
-                  />
-                  <button id="searchButton"> Home</button>
-                </div>
+                </span>
+                Home
               </li>
               <li class="mb-2">
                 <span class="me-3">
@@ -512,44 +483,39 @@
             <!-- ! NAVBAR -->
 
             <div class="freccie-container">
-              <a href="./HomePage.html">
-
-                <svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
                 class="freccie bi bi-chevron-left toggle-split"
                 viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
-                  />
-                </svg>
-              </a>
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                />
+              </svg>
               <!-- ?SVG FRECCE-->
-              <a href="./ArtistPage.html">
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="freccie bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                  />
-                </svg>
-              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="freccie bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
             </div>
             <!-- ?SVG FRECCE-->
 
             <div class="btn-group">
-              <button class="btn btn-dark btn-sm rounded-pill dropdown-toggle-split dropdown-toggle me-2" type="button" data-bs-toggle="dropdown"
+              <button class="btn btn-dark btn-sm rounded-pill dropdown-toggle-split dropdown-toggle" type="button" data-bs-toggle="dropdown"
               aria-expanded="false">
                 <img
                   src="./assets/imgs/main/image-9.jpg"
@@ -610,45 +576,9 @@
           </div>
           
           </div>
-          <div class="d-flex justify-content-start col-12" id="album-details"></div>
-  
-            <div class="container mt-3 mb-3 ms-3 d-flex align-items-center">
-  <svg data-encore-id="icon" role="img" aria-hidden="true" width="22px" height="30px" viewBox="0 0 24 24" class="svgPlay me-2 Svg-sc-ytk21e-0 bneLcE">
-    <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="ms-4 bi bi-heart" viewBox="0 0 16 16">
-    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"></path>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="ms-4 bi bi-arrow-down-circle" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"></path>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="30px" fill="gray" class="bi bi-three-dots ms-4" viewBox="0 0 16 16">
-    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"></path>
-  </svg>
-</div>
-
-           
-            <div class="container">
-              <div class="row">
-                <div class="col-12 ps-4 mb-4 pb-3">
-                  <ul class="mt-3 p-0">
-                    <li class="mb-3 song-item">
-                      <div class="details d-flex justify-content-between text-light-emphasis">
-                        <span>#TITOLO</span>
-                        <span class="ms-5 ps-5 d-flex justify-content-center">RIPRODUZIONI</span>
-                        <span class="ms-3 d-flex justify-content-center">DURATION</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <hr class="text-secondary"/>
-                  <div class="col-12 scrollbarColCen text-light" id="tracklist-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="album-details"></div>
           <div class="col-2 text-light" id="collumnDx">  
             
-          <!--  <div id="album-details"></div>-->
             
             
             <!-- !INIZIO CONTENITORE LAT DX  -->
@@ -1468,10 +1398,46 @@
       </div>
     </div>
     <!-- ! FINE BAR MUSIC -->
-    <script src="./albuminfo.js"></script>
-    <script src="./search.js"></script>
+     -->
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>
 
+<!--<h1>${albumData.title}</h1>
+<img src="${albumData.cover_medium}" alt="${albumData.title} cover">
+<p><a href="./ArtistPage.html?artist=${encodeURIComponent(albumData.artist.name)}">
+  <strong>Artist:</strong> ${albumData.artist.name}
+</a></p>
+<p><strong>Release Date:</strong> ${new Date(albumData.release_date).toDateString()}</p>
+
+<ul class="track-list list-group">
+  ${trackList}
+</ul>
+`
+-->
+
+
+<!-- <div class="ms-4 mt-3">
+  <img src="./assets/imgs/main/image-13.jpg" alt="">
+</div>
+
+<div class="ms-4 mt-5 pt-5 align-items-end">
+  <div><p class="text-light">ALBUM</p></div>
+  <div><h1 class="h1Album text-light">Gioventù Brucata</h1></div>
+  <div class="nameAlbum mt-5">
+    <div><img src="./assets/imgs/search/image-4.jpg" alt="" class="artist-img me-1"></div>
+    <div><p>
+      <span class="fw-bold text-light">Pinguini Tattici Nucleari• 2017 • 12 brani,</span>
+    <span class="text-light-emphasis">53 min 20 sec</span></p></div>
+  </div>
+</div> -->
+
+<ul>
+  <!-- <ul class="track-list list-group">
+    ${trackList}
+  </ul> -->
+</ul>
+
+<div class="d-flex justify-content-start col-12 "></div>
