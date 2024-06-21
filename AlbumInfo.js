@@ -36,23 +36,23 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
   
         <div class="ms-4 mt-5 align-items-end">
-  <div><p class="text-light">ALBUM</p></div>
-  <div><h1 class="h1Album text-light text-white fw-bold">${albumData.title}</h1></div>
-  <div class="nameAlbum mt-5">
-    <div>
-      <img src="./assets/imgs/search/image-4.jpg" alt="" class="artist-img">
-    </div>
-    <div>
-      <p>
-        <a href="./ArtistPage.html?artist=${encodeURIComponent(albumData.artist.name)}">
-          ${albumData.artist.name} • ${new Date(albumData.release_date).toDateString()} •
-        </a>
-        <span class="textColor">53 min 20 sec</span>
-      </p>
-    </div>
-  </div>
-</div>
-
+          <div><p class="text-light">ALBUM</p></div>
+          <div><h1 class="h1Album text-light text-white fw-bold">${albumData.title}</h1></div>
+          <div class="nameAlbum mt-5">
+            <div><img src="./assets/imgs/search/image-4.jpg" alt="" class="artist-img me-1"></div>
+            <div>
+              <p>
+                <a href="./ArtistPage.html?artist=${encodeURIComponent(albumData.artist.name)}">${
+      albumData.artist.name
+    }</a>
+              </p>
+              <p>
+                ${new Date(albumData.release_date).toDateString()} •
+                <span class="textColor">53 min 20 sec</span>
+              </p>
+            </div>
+          </div>
+        </div>
       `;
 
     albumDetailsContainer.innerHTML = albumDetailsHtml;
