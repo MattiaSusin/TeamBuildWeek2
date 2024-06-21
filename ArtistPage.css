@@ -32,12 +32,12 @@ a{
 
 input{
     background-color:#2b2b2b ;
-    width: 155px;
+    width: 140px;
     color: #575757;
     border: none;
 }
 
-.btnInput {
+input, button{
     color: #575757;
     border: none;
     background-color:#2b2b2b ;
@@ -317,3 +317,4 @@ ol.ms-4.mt-3 {
     margin-right: 10px;
     opacity:50%;
   }
+  #search-container { display:none;}
