@@ -64,6 +64,7 @@ padding-left: 85px;
 .freccie-container {
   display: flex;
   gap: 10px;
+  margin-left: 24px;
 }
 
 .freccie {
