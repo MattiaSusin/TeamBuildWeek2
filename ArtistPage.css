@@ -186,9 +186,9 @@ li span:not(:first-child)  { opacity: 50%;}
 }
 
 .scrollbarC{
-    height: 849px;
+    height: 285px;
     overflow: auto;
-    scrollbar-color: #4d4d4d #000000;
+    scrollbar-color: #4d4d4d #2a2a2a;
 
 
 }
