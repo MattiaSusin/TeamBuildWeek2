@@ -220,7 +220,7 @@ li span:not(:first-child)  { opacity: 50%;}
 }
 
 .scrollbarC{
-    height: 285px;
+    height: 358px;
     overflow: auto;
     scrollbar-color: #4d4d4d #2a2a2a;
 
