@@ -10,13 +10,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./HomePage.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
     <title>Home Page</title>
   </head>
   <body>
     <div id="page" class="container-fluid">
       <!-- ! INIZIO CONTENITORE 3 COLONNE PRINCIPALI -->
-      <div class="row">
+      <div class="row ">
         <div class="col-2 d-none d-sm-block" id="collumnSx">
           <!-- ! INIZIO COLONNA SINISTRA -->
           <div class="mt-4">
@@ -36,25 +36,28 @@
                   />
                 </svg>
               </div>
-              <li class="mb-2">
-                <span class="me-3">
-                  <svg
-                    data-encore-id="icon"
-                    width="22px"
-                    height="30px"
-                    role="img"
-                    fill="white"
-                    aria-hidden="true"
-                    class="Svg-sc-ytk21e-0 bneLcE home-icon QbaKKdcHNA2x3_YJvpYu"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"
-                    ></path>
-                  </svg>
-                </span>
-                Home
-              </li>
+              <a href="./HomePage.html">
+
+                  <li class="mb-2">
+                    <span class="me-3">
+                      <svg
+                        data-encore-id="icon"
+                        width="22px"
+                        height="30px"
+                        role="img"
+                        fill="white"
+                        aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 bneLcE home-icon QbaKKdcHNA2x3_YJvpYu"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Home
+                  </li>
+              </a>
               <li class="mb-2">
                 <span class="me-3">
                   <svg
@@ -72,14 +75,14 @@
                     ></path>
                   </svg>
                 </span>
-                <div class="search-container">
-                  <input
+                <input
                     type="text"
                     id="searchInput"
                     placeholder="Search for an artist"
+                    class="rounded"
                   />
-                  <button id="searchButton">Search</button>
-                </div>
+                  <button class="btnInput rounded" id="searchButton">Search</button>
+                
               </li>
               <li class="mb-2">
                 <span class="me-3">
@@ -479,7 +482,8 @@
 
         </div>                                      <!-- ! INIZIO COLONNA SINISTRA -->
 
-        <div class="col-12 col-xl-8 text-light scrollbarC" id="collumnCentr">
+
+        <div class="col-8 text-light scrollbarC" id="collumnCentr">
           <!-- ! INIZIO COLONNA CENTRALE -->
 
           <div>
@@ -487,8 +491,9 @@
 
             <div class="d-flex justify-content-between mt-3">
               <!-- ! NAVBAR -->
-
               <div class="freccie-container">
+              <a href="./HomePage.html">
+
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -502,22 +507,25 @@
                     d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
                   />
                 </svg>
+              </a>
                 <!-- ?SVG FRECCE-->
+                <a href="./albumPage.html">
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="freccie bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                  />
-                </svg>
-              </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="freccie bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </div>
+                </a>
               <!-- ?SVG FRECCE-->
 
               <div class="btn-group">
@@ -595,13 +603,10 @@
                   class="imgAlbumColCentr"
                 />
               </div>
-              <div class="col-9 ms-5 ps-5 mt-2">
-                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <div class="col-9 ms-5 ps-5 mt-2"> <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                 <div class="d-flex justify-content-between mt-2 me-1 pe-1">
-                  <div><p>ALBUM</p></div>
-                  <button class="btnAlbumCen rounded-pill">
-                    NASCONDI ANNUNCI
-                  </button>
+                  <div class="albumtext"><p>ALBUM</p></div>
+                  <button class=" btnAlbumCen rounded-pill ">NASCONDI ANNUNCI</button>
                 </div>
                 <div><p class="fs-1 fw-bold">VIOLA (feat SALMO)</p></div>
                 <div><p>Fedez,Salmo</p></div>
@@ -635,127 +640,166 @@
           <div id="sixCards" class="row d-flex justify-content-between">
             <!-- !INIZIO 6 CARDS -->
 
+           
             <div class="card1 mb-3 col-4 p-0">
               <div class="row g-0" id="album26">
-                <div class="col-md-4 p-0">
-                  <img
-                    src="cover1.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
+                  <div class="col-md-4 p-0">
+                      <img src="cover1.jpg" class="img-fluid rounded-start" alt="">
+                  </div>
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title"></h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+
+          <div class="card1 mb-3 col-4 p-0">
+            <div class="row g-0" id="album27">
+                <div class="col-md-4">
+                    <img src="cover1.jpg" class="img-fluid rounded-start" alt="">
                 </div>
                 <div class="col-md-8">
+                    <div class="card1-body">
+                        <h5 class="card1-title"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card1 mb-3 col-4 p-0">
+          <div class="row g-0" id="album28">
+              <div class="col-md-4">
+                  <img src="cover1.jpg" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title"></h5>
+                      <h5 class="card-title"></h5>
                   </div>
-                </div>
               </div>
-            </div>
+          </div>
+      </div>
+  
 
-            <div class="card1 mb-3 col-4 p-0">
-              <div class="row g-0" id="album27">
-                <div class="col-md-4">
-                  <img
-                    src="cover1.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card1-body">
+      <div class="card1 mb-3 col-4 p-0">
+        <div class="row g-0" id="album29">
+            <div class="col-md-4">
+                <img src="cover1.jpg" class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-md-8">
+                <div class="card1-body">
                     <h5 class="card1-title"></h5>
-                  </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="card1 mb-3 col-4 p-0">
+      <div class="row g-0" id="album30">
+          <div class="col-md-4">
+              <img src="cover1.jpg" class="img-fluid rounded-start" alt="">
+          </div>
+          <div class="col-md-8">
+              <div class="card-body">
+                  <h5 class="card-title"></h5>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="card1 mb-3 col-4 p-0">
+    <div class="row g-0" id="album31">
+        <div class="col-md-4">
+            <img src="cover1.jpg" class="img-fluid rounded-start" alt="">
+        </div>
+        <div class="col-md-8">
+            <div class="card1-body">
+                <h5 class="card1-title"></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+          <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FINE 6 CARDS ------------------------------------------------------------>
+
+          <div class="d-flex justify-content-between mb-3 mt-2">
+            <div >
+              <h3 >Altro di ciò che ti piace</h3>
+            </div>
+            <div>
+              <h6>VISUALIZZA TUTTO</h6>
+            </div>
+          </div>
+          <!-- ?PRIMA RIGA ALBUM -->
+          <div class="row d-flex justify-content-between mx-1">
+            <div class=" card2 card col-2 rounded text-light" id="album1">
+              <img src="" class=""/>
+              <div class="card2-body">
+                <p class="card2-text mt-1"></p>
               </div>
             </div>
 
-            <div class="card1 mb-3 col-4 p-0">
-              <div class="row g-0" id="album28">
-                <div class="col-md-4">
-                  <img
-                    src="cover1.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                  </div>
-                </div>
+            <div class=" card2 text-light card col-2" id="album2">
+              <img
+                src="./assets/imgs/search/image-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
               </div>
             </div>
 
-            <div class="card1 mb-3 col-4 p-0">
-              <div class="row g-0" id="album29">
-                <div class="col-md-4">
-                  <img
-                    src="cover1.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card1-body">
-                    <h5 class="card1-title"></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card1 mb-3 col-4 p-0">
-              <div class="row g-0" id="album30">
-                <div class="col-md-4">
-                  <img
-                    src="cover1.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                  </div>
-                </div>
+            <div class=" card2 text-light card col-2" id="album3">
+              <img
+                src="./assets/imgs/search/image-10.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
               </div>
             </div>
 
-            <div class="card1 mb-3 col-4 p-0">
-              <div class="row g-0" id="album31">
-                <div class="col-md-4">
-                  <img
-                    src="cover1.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card1-body">
-                    <h5 class="card1-title"></h5>
-                  </div>
-                </div>
+            <div class=" card2 text-light card col-2" id="album4">
+              <img
+                src="./assets/imgs/search/image-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
               </div>
             </div>
 
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FINE 6 CARDS ------------------------------------------------------------>
-
-            <div class="d-flex justify-content-between mb-3 mt-2">
-              <div>
-                <h3>Altro di ciò che ti piace</h3>
-              </div>
-              <div>
-                <h6>VISUALIZZA TUTTO</h6>
+            <div class=" card2 text-light card col-2" id="album5">
+              <img
+                src="./assets/imgs/search/image-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
               </div>
             </div>
-            <!-- ?PRIMA RIGA ALBUM -->
+          </div>
+
+          <div class="mt-5">
+            <!-- ?INIZIO SECONDA RIGA ALBUM -->
             <div class="row d-flex justify-content-between mx-1">
-              <div class="card2 card col-2 rounded text-light" id="album1">
-                <img src="" class="" />
-                <div class="card2-body">
-                  <p class="card2-text mt-1"></p>
+              <div class=" card2 text-light card col-2" id="album6">
+                <img src="" />
+                <div class="card-body">
+                  <p class="card-text"></p>
                 </div>
               </div>
 
-              <div class="card2 text-light card col-2" id="album2">
+              <div class=" card2 text-light card col-2" id="album7">
                 <img
                   src="./assets/imgs/search/image-1.jpeg"
                   class="card-img-top"
@@ -766,7 +810,7 @@
                 </div>
               </div>
 
-              <div class="card2 text-light card col-2" id="album3">
+              <div class=" card2 text-light card col-2" id="album8">
                 <img
                   src="./assets/imgs/search/image-10.jpg"
                   class="card-img-top"
@@ -777,7 +821,7 @@
                 </div>
               </div>
 
-              <div class="card2 text-light card col-2" id="album4">
+              <div class=" card2 text-light card col-2" id="album9">
                 <img
                   src="./assets/imgs/search/image-1.jpeg"
                   class="card-img-top"
@@ -788,7 +832,7 @@
                 </div>
               </div>
 
-              <div class="card2 text-light card col-2" id="album5">
+              <div class=" card2 text-light card col-2" id="album10">
                 <img
                   src="./assets/imgs/search/image-1.jpeg"
                   class="card-img-top"
@@ -799,815 +843,762 @@
                 </div>
               </div>
             </div>
-
-            <div class="mt-5">
-              <!-- ?INIZIO SECONDA RIGA ALBUM -->
-              <div class="row d-flex justify-content-between mx-1">
-                <div class="card2 text-light card col-2" id="album6">
-                  <img src="" />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album7">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album8">
-                  <img
-                    src="./assets/imgs/search/image-10.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album9">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album10">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ?FINE SECONDA RIGA ALBUM -->
-
-            <div class="mt-5">
-              <!-- ?INIZIO TERZA RIGA ALBUM -->
-              <div class="row d-flex justify-content-between mx-1">
-                <div class="card2 text-light card col-2" id="album11">
-                  <img src="" />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album12">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album13">
-                  <img
-                    src="./assets/imgs/search/image-10.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album14">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album15">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ?FINE TERZA RIGA ALBUM -->
-
-            <div class="mt-5">
-              <!-- ?INIZIO QUARTA RIGA ALBUM -->
-              <div class="row d-flex justify-content-between mx-1">
-                <div class="card2 text-light card col-2" id="album16">
-                  <img src="" />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album17">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album18">
-                  <img
-                    src="./assets/imgs/search/image-10.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album19">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album20">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ?FINE QUARTA RIGA ALBUM -->
-
-            <div class="mt-5 mb-5">
-              <!-- ?INIZIO QUINTA RIGA ALBUM -->
-              <div class="row d-flex justify-content-between mx-1">
-                <div class="card2 text-light card col-2" id="album21">
-                  <img src="" />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album22">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album23">
-                  <img
-                    src="./assets/imgs/search/image-10.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album24">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-
-                <div class="card2 text-light card col-2" id="album25">
-                  <img
-                    src="./assets/imgs/search/image-1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ?FINE QUINTA RIGA ALBUM -->
           </div>
-          <!-- ! FINE COLONNA CENTRALE -->
+          <!-- ?FINE SECONDA RIGA ALBUM -->
 
-          <!-- ! FINE CONTENITORE 3 COLONNE PRINCIPALI -->
+          <div class="mt-5">
+            <!-- ?INIZIO TERZA RIGA ALBUM -->
+            <div class="row d-flex justify-content-between mx-1">
+              <div class=" card2 text-light card col-2" id="album11">
+                <img src="" />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album12">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album13">
+                <img
+                  src="./assets/imgs/search/image-10.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album14">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album15">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ?FINE TERZA RIGA ALBUM -->
+
+          <div class="mt-5">
+            <!-- ?INIZIO QUARTA RIGA ALBUM -->
+            <div class="row d-flex justify-content-between mx-1">
+              <div class=" card2 text-light card col-2" id="album16">
+                <img src="" />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album17">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album18">
+                <img
+                  src="./assets/imgs/search/image-10.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album19">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album20">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ?FINE QUARTA RIGA ALBUM -->
+
+          <div class="mt-5 mb-5">
+            <!-- ?INIZIO QUINTA RIGA ALBUM -->
+            <div class="row d-flex justify-content-between mx-1">
+              <div class=" card2 text-light card col-2" id="album21">
+                <img src="" />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album22">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album23">
+                <img
+                  src="./assets/imgs/search/image-10.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album24">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+
+              <div class=" card2 text-light card col-2" id="album25">
+                <img
+                  src="./assets/imgs/search/image-1.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ?FINE QUINTA RIGA ALBUM -->
         </div>
-        <div class="col-2 text-light d-none d-sm-block" id="collumnDx">
-          <div class="row d-flex justify-content-between mt-4">
-            <p class="col-6 fw-bold">Attività Amici</p>
-            <div class="col-6 d-flex flex-row-reverse">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-person-add"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
-                />
-                <path
-                  d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-x-lg"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="scrollbarDx pe-3">
-            <!-- ????????????????????????????????? PRIMO AMICO??????????????????????????????????????????????? -->
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-6.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>7 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
+        <!-- ! FINE COLONNA CENTRALE -->
 
-            <!-- ????????????????????????????????? SECONDO AMICO??????????????????????????????????????????????? -->
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-3.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>5 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-            <!-- ????????????????????????????????? TERZO AMICO??????????????????????????????????????????????? -->
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-4.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>2 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-            <!-- ????????????????????????????????? QUARTO AMICO??????????????????????????????????????????????? -->
-
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-5.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>9 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-            <!-- ????????????????????????????????? QUINTO AMICO??????????????????????????????????????????????? -->
-
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-2.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>7 giorni</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-
-            <!-- ????????????????????????????????? PRIMO AMICO??????????????????????????????????????????????? -->
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-6.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>7 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-
-            <!-- ????????????????????????????????? SECONDO AMICO??????????????????????????????????????????????? -->
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-3.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>5 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-            <!-- ????????????????????????????????? TERZO AMICO??????????????????????????????????????????????? -->
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-4.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>2 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-            <!-- ????????????????????????????????? QUARTO AMICO??????????????????????????????????????????????? -->
-
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-5.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>9 ore</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-            <!-- ????????????????????????????????? QUINTO AMICO??????????????????????????????????????????????? -->
-
-            <div class="d-flex justify-content-between contTotDx col-12 mt-4">
-              <div class="contImgSx p-1 col-2">
-                <!-- ************************************************CONTENITORE IMG*************************************** -->
-                <img
-                  src="./assets/imgs/main/image-2.jpg"
-                  class="imgCardColDx"
-                  alt="..."
-                  width=""
-                />
-              </div>
-              <!-- ************************************************CONTENITORE IMG*************************************** -->
-              <div class="contTextDx ms-3 col">
-                <!-- ********************************CONTENITORE IN MEZZO******************** -->
-                <div class="d-flex justify-content-between">
-                  <p class="card-title">Charlie Hookham</p>
-                </div>
-                <div>
-                  <p class="card-text text-dark-emphasis fs-8">
-                    In salotto &#183; Yumi Zuma
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <p class="card-text me-1 text-dark-emphasis">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-music-note"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
-                      />
-                      <path fill-rule="evenodd" d="M9 3v10H8V3z" />
-                      <path
-                        d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
-                      />
-                    </svg>
-                  </p>
-                  <p class="text-dark-emphasis fs-8">MDN</p>
-                </div>
-              </div>
-              <!-- ********************************CONTENITORE IN MEZZO******************** -->
-              <div>
-                <!-- ********************************* CONTENITORE DESTRA********************** -->
-                <div>
-                  <p>7 giorni</p>
-                </div>
-              </div>
-              <!-- ********************************* CONTENITORE DESTRA********************** -->
-            </div>
-          </div>
-        </div>
-        <!-- !INIZIO CONTENITORE LAT DX  -->
+        <!-- ! FINE CONTENITORE 3 COLONNE PRINCIPALI -->
       </div>
-      <!-- ! FINE COLONNA SINISTRA -->
+      <div class="col-2 text-light d-none d-sm-block" id="collumnDx"> 
+       
+        <div class="row d-flex justify-content-between mt-4 ">
+          <p class="col-6 fw-bold">Attività Amici</p>
+          <div class="col-6 d-flex flex-row-reverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-person-add"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+              />
+              <path
+                d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="scrollbarDx pe-3">
+          <!-- ????????????????????????????????? PRIMO AMICO??????????????????????????????????????????????? -->
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-6.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>7 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+
+          <!-- ????????????????????????????????? SECONDO AMICO??????????????????????????????????????????????? -->
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-3.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>5 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+          <!-- ????????????????????????????????? TERZO AMICO??????????????????????????????????????????????? -->
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-4.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>2 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+          <!-- ????????????????????????????????? QUARTO AMICO??????????????????????????????????????????????? -->
+
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-5.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>9 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+          <!-- ????????????????????????????????? QUINTO AMICO??????????????????????????????????????????????? -->
+
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-2.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>7 giorni</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+
+          <!-- ????????????????????????????????? PRIMO AMICO??????????????????????????????????????????????? -->
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-6.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>7 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+
+          <!-- ????????????????????????????????? SECONDO AMICO??????????????????????????????????????????????? -->
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-3.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>5 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+          <!-- ????????????????????????????????? TERZO AMICO??????????????????????????????????????????????? -->
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-4.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>2 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+          <!-- ????????????????????????????????? QUARTO AMICO??????????????????????????????????????????????? -->
+
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-5.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>9 ore</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+          <!-- ????????????????????????????????? QUINTO AMICO??????????????????????????????????????????????? -->
+
+          <div class="d-flex justify-content-between contTotDx col-12 mt-4">
+            <div class="contImgSx p-1 col-2">
+              <!-- ************************************************CONTENITORE IMG*************************************** -->
+              <img
+                src="./assets/imgs/main/image-2.jpg"
+                class="imgCardColDx"
+                alt="..."
+                width=""
+              />
+            </div>
+            <!-- ************************************************CONTENITORE IMG*************************************** -->
+            <div class="contTextDx ms-3 col">
+              <!-- ********************************CONTENITORE IN MEZZO******************** -->
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Charlie Hookham</p>
+              </div>
+              <div>
+                <p class="card-text text-dark-emphasis fs-8">
+                  In salotto &#183; Yumi Zuma
+                </p>
+              </div>
+              <div class="d-flex">
+                <p class="card-text me-1 text-dark-emphasis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-music-note"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+                    />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path
+                      d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+                    />
+                  </svg>
+                </p>
+                <p class="text-dark-emphasis fs-8">MDN</p>
+              </div>
+            </div>
+            <!-- ********************************CONTENITORE IN MEZZO******************** -->
+            <div>
+              <!-- ********************************* CONTENITORE DESTRA********************** -->
+              <div>
+                <p>7 giorni</p>
+              </div>
+            </div>
+            <!-- ********************************* CONTENITORE DESTRA********************** -->
+          </div>
+        </div>
+      </div>
+      <!-- !INIZIO CONTENITORE LAT DX  -->
+        </div>  <!-- ! FINE COLONNA SINISTRA -->
+        
+                                   
 
       <div>
         <!-- ! INIZIO BAR MUSIC -->
@@ -1839,10 +1830,10 @@
       </div>
     </div>
     <!-- ! FINE BAR MUSIC -->
-
-    <script src="./album.js"></script>
-    <script src="./search.js"></script>
+    <script src="./Album.js"></script>
+    <script src="./Search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
