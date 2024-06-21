@@ -27,32 +27,9 @@ svg{
 .albumColCen{
 
     background: linear-gradient(90deg,#060606,#121212,#151515,#1B1B1B);
+    
+
 }
-.albumtext{
-    color: #575757;
-}
-.btnAlbumCen{
-    font-size: 13px;
-    color: #575757;
-    background-color: #2b2b2b;
-    padding: 5px 5px;
-    height: 28px;
-    /*   border: solid #1ed760 2px */;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    border-radius: 50px;
-    transition : 0ms;
-    transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-}
-.btnAlbumCen:hover{
-    cursor: pointer;
-    color: #575757;
-    background-color: #3f3e3e;
-    }
 #card6{
     margin-top: 22px; 
 }
@@ -83,8 +60,7 @@ cursor: pointer;
     color: #000000;
     background-color: #1ed760;
     padding: 10px 30px;
-  /*   border: solid #1ed760 2px */;
-  border: none;
+    border: solid #1ed760 2px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     border-radius: 50px;
     transition : 0ms;
@@ -96,26 +72,26 @@ cursor: pointer;
 }
 .btnPlay:hover{
     cursor: pointer;
-    color: #509c1c;
-    background-color: #29e96c;
+    color: #1ed760;
+    background-color: #1ed760;
     } 
 
     .btnAnnunci{
         font-family: Roboto, sans-serif;
-        font-weight: 0;
-        font-size: 13px;
-        color: #818181;
-        background-color: #383838;
-        padding: 10px 30px;
-        border: none;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-        border-radius: 50px;
-        transition : 1000ms;
-        transform: translateY(0);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        cursor: pointer;
+font-weight: 0;
+font-size: 13px;
+color: #818181;
+background-color: #383838;
+padding: 10px 30px;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
 
 }
 
@@ -140,7 +116,6 @@ cursor: pointer;
     padding: 8px; /** Spazio interno */
     width: 30px; /** Larghezza del cerchio */
     height: 30px; /** Altezza del cerchio */
-    color: white;
   }
 
   .freccie svg {
@@ -398,8 +373,4 @@ background-color: #4d4d4d;
 .card2-title {
     font-size: 1rem;
     margin-bottom: 0;
-}
-
-p,h1,span,img{
-    cursor: pointer;
 }
