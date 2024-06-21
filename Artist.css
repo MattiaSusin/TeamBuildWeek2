@@ -299,3 +299,26 @@ ol.ms-4.mt-3 {
     margin-right: 10px;
     opacity:50%;
   }
+
+  .navbar-bottom{
+    background-image: linear-gradient(rgba(158, 140, 140, 0), rgb(0, 0, 0));
+    opacity: 1;
+  }
+
+  .Svg-sc-ytk21e-1{
+    margin: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .navbar-mobile{
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altezza della viewport */
+    overflow: hidden; /* Nasconde la barra di scorrimento */
+    display: flex;
+    flex-direction: column;
+}
