@@ -299,6 +299,11 @@ hr {
   max-width: 100%;
   display: inline-block;
 }
+.colScrollDx {
+  height: 766px;
+  width: 308px;
+  padding-right: 11px;
+}
 
 .svgPlay {
   background-color: #00410b;
@@ -308,11 +313,6 @@ hr {
   height: 30px;
 }
 
-.colScrollDx {
-  height: 766px;
-  width: 308px;
-  padding-right: 11px;
-}
 
 .svgPlay {
   width: 50px;
