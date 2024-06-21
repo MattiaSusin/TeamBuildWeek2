@@ -18,12 +18,12 @@ a{
 
 input{
     background-color:#2b2b2b ;
-    width: 155px;
+    width: 140px;
     color: #575757;
     border: none;
 }
 
-.btnInput {
+input , button  {
     color: #575757;
     border: none;
     background-color:#2b2b2b ;
@@ -421,4 +421,7 @@ background-color: #4d4d4d;
 
 p,h1,span,img{
     cursor: pointer;
+}
+#search-container {
+   display:none;
 }

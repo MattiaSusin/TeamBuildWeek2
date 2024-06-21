@@ -1,3 +1,18 @@
+document.getElementById("searchIcon").addEventListener("click", function () {
+  const searchContainer = document.getElementById("search-container");
+  const textSearch = document.getElementById("text-search");
+  if (
+    searchContainer.style.display === "none" ||
+    searchContainer.style.display === ""
+  ) {
+    searchContainer.style.display = "inline-block";
+    textSearch.style.display = "none";
+  } else {
+    searchContainer.style.display = "none";
+    textSearch.style.display = "inline";
+  }
+});
+
 document.getElementById("searchButton").addEventListener("click", searchArtist);
 
 function searchArtist() {
