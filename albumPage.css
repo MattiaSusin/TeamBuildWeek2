@@ -283,3 +283,11 @@ hr {
 ul {
   list-style-type: none;
 }
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.details > span {
+  flex-basis: 33%;
+  text-align: left;
+}

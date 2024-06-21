@@ -30,16 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
 
     const albumDetailsHtml = `
-      <h1>${albumData.title}</h1>
-      <img src="${albumData.cover_medium}" alt="${albumData.title} cover">
-      <p><a href="./ArtistPage.html?artist=${encodeURIComponent(albumData.artist.name)}">
-        <strong>Artist:</strong> ${albumData.artist.name}
-      </a></p>
-      <p><strong>Release Date:</strong> ${new Date(albumData.release_date).toDateString()}</p>
+      <div class="ms-4 mt-3">
+  <img src="${albumData.cover_medium}" alt="${albumData.title} cover">
+</div>
+
+<div class="ms-4 mt-5 pt-4 align-items-end">
+  <div><p class="text-light">ALBUM</p></div>
+  <div><h1 class="h1Album text-light">${albumData.title}</h1></div>
+  <div class="nameAlbum mt-5">
+    <div><img src="./assets/imgs/search/image-4.jpg" alt="" class="artist-img me-1"></div>
+    <div><p>
+      <span class="fw-bold text-light">${albumData.artist.name} • ${new Date(
+      albumData.release_date
+    ).toDateString()} •</span>
+    <span class="text-light-emphasis">53 min 20 sec</span></p></div>
+  </div>
+</div>
       
-      <ul class="track-list list-group">
-        ${trackList}
-      </ul>
     `;
 
     albumDetailsContainer.innerHTML = albumDetailsHtml;
